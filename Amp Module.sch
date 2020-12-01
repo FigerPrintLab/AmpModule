@@ -1,0 +1,357 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x17_Odd_Even J?
+U 1 1 5FC519A3
+P 1600 1800
+F 0 "J?" H 1650 2817 50  0000 C CNN
+F 1 "IDC34" H 1650 2726 50  0000 C CNN
+F 2 "" H 1600 1800 50  0001 C CNN
+F 3 "~" H 1600 1800 50  0001 C CNN
+	1    1600 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x17_Odd_Even J?
+U 1 1 5FC528FD
+P 1450 6700
+F 0 "J?" H 1500 7717 50  0000 C CNN
+F 1 "IDC34" H 1500 7626 50  0000 C CNN
+F 2 "" H 1450 6700 50  0001 C CNN
+F 3 "~" H 1450 6700 50  0001 C CNN
+	1    1450 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x17_Odd_Even J?
+U 1 1 5FC53FFE
+P 2500 6700
+F 0 "J?" H 2550 7717 50  0000 C CNN
+F 1 "IDC34" H 2550 7626 50  0000 C CNN
+F 2 "" H 2500 6700 50  0001 C CNN
+F 3 "~" H 2500 6700 50  0001 C CNN
+	1    2500 6700
+	1    0    0    -1  
+$EndComp
+Text GLabel 1400 1000 0    50   Input ~ 0
+DSP_SDPWS
+NoConn ~ 1400 1100
+NoConn ~ 1900 1000
+NoConn ~ 1900 1100
+Wire Wire Line
+	1400 1200 700  1200
+Wire Wire Line
+	700  1200 700  2300
+$Comp
+L power:GND #PWR?
+U 1 1 5FC5640E
+P 700 2800
+F 0 "#PWR?" H 700 2550 50  0001 C CNN
+F 1 "GND" H 705 2627 50  0000 C CNN
+F 2 "" H 700 2800 50  0001 C CNN
+F 3 "" H 700 2800 50  0001 C CNN
+	1    700  2800
+	1    0    0    -1  
+$EndComp
+Text GLabel 1400 1300 0    50   Input ~ 0
+DSP_OUT1-
+Text GLabel 1900 1200 2    50   Input ~ 0
+DSP_OUT1+
+Wire Wire Line
+	1900 1300 2600 1300
+$Comp
+L power:GND #PWR?
+U 1 1 5FC572C9
+P 2600 2800
+F 0 "#PWR?" H 2600 2550 50  0001 C CNN
+F 1 "GND" H 2605 2627 50  0000 C CNN
+F 2 "" H 2600 2800 50  0001 C CNN
+F 3 "" H 2600 2800 50  0001 C CNN
+	1    2600 2800
+	-1   0    0    -1  
+$EndComp
+Text GLabel 1400 1400 0    50   Input ~ 0
+DSP_VOUT1MON
+Text GLabel 1900 1400 2    50   Input ~ 0
+DSP_PROTECT1
+Text GLabel 1400 1500 0    50   Input ~ 0
+DSP_IOUT1MON
+Text GLabel 1900 1500 2    50   Input ~ 0
+DSP_TEMPMON12
+Text GLabel 1400 1600 0    50   Input ~ 0
+DSP_+12VDCIN
+Text GLabel 1900 1600 2    50   Input ~ 0
+DSP_-12VDCIN
+Text GLabel 1400 1700 0    50   Input ~ 0
+DSP_MUTE
+Text GLabel 1900 1700 2    50   Input ~ 0
+DSP_+VCCMON
+Text GLabel 1400 1800 0    50   Input ~ 0
+DSP_-VCCMON
+Text GLabel 1400 1900 0    50   Input ~ 0
+DSP_+VCCMON
+Text GLabel 1900 1800 2    50   Input ~ 0
+DSP_-VCCMON
+Text GLabel 1900 1900 2    50   Input ~ 0
+DSP_MUTE
+Text GLabel 1400 2000 0    50   Input ~ 0
+DSP_-12VDCIN
+Text GLabel 1900 2000 2    50   Input ~ 0
+DSP_+12VDCIN
+Text GLabel 1400 2100 0    50   Input ~ 0
+DSP_TEMPMON12
+Text GLabel 1900 2100 2    50   Input ~ 0
+DSP_IOUT2MON
+Text GLabel 1400 2200 0    50   Input ~ 0
+DSP_PROTECT2
+Text GLabel 1900 2200 2    50   Input ~ 0
+DSP_VOUT2MON
+Wire Wire Line
+	2600 1300 2600 2400
+Wire Wire Line
+	1400 2300 700  2300
+Connection ~ 700  2300
+Wire Wire Line
+	700  2300 700  2800
+Text GLabel 1900 2300 2    50   Input ~ 0
+DSP_OUT2-
+Text GLabel 1400 2400 0    50   Input ~ 0
+DSP_OUT2+
+Wire Wire Line
+	1900 2400 2600 2400
+Connection ~ 2600 2400
+Wire Wire Line
+	2600 2400 2600 2800
+NoConn ~ 1400 2500
+NoConn ~ 1900 2500
+NoConn ~ 1400 2600
+Text GLabel 1900 2600 2    50   Input ~ 0
+DSP_SDPWS
+Text GLabel 3500 900  0    50   Input ~ 0
+DSP_OUT1+
+$Comp
+L Device:R_POT_Dual RV?
+U 1 1 5FC5BCE3
+P 3700 1350
+F 0 "RV?" V 3650 1550 50  0000 R CNN
+F 1 "100k" V 3750 1600 50  0000 R CNN
+F 2 "" H 3950 1275 50  0001 C CNN
+F 3 "~" H 3950 1275 50  0001 C CNN
+	1    3700 1350
+	0    1    1    0   
+$EndComp
+Text GLabel 3500 1400 0    50   Input ~ 0
+DSP_OUT1-
+Wire Wire Line
+	3500 1400 3600 1400
+Wire Wire Line
+	3600 1400 3600 1450
+$Comp
+L power:GND #PWR?
+U 1 1 5FC5E8D1
+P 3600 1250
+F 0 "#PWR?" H 3600 1000 50  0001 C CNN
+F 1 "GND" H 3750 1250 50  0000 C CNN
+F 2 "" H 3600 1250 50  0001 C CNN
+F 3 "" H 3600 1250 50  0001 C CNN
+	1    3600 1250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 900  3600 900 
+Wire Wire Line
+	3600 900  3600 950 
+$Comp
+L power:GND #PWR?
+U 1 1 5FC5F550
+P 3600 1750
+F 0 "#PWR?" H 3600 1500 50  0001 C CNN
+F 1 "GND" H 3750 1750 50  0000 C CNN
+F 2 "" H 3600 1750 50  0001 C CNN
+F 3 "" H 3600 1750 50  0001 C CNN
+	1    3600 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FC5F926
+P 4100 1250
+F 0 "R?" H 4159 1296 50  0000 L CNN
+F 1 "12k" H 4159 1205 50  0000 L CNN
+F 2 "" H 4100 1250 50  0001 C CNN
+F 3 "~" H 4100 1250 50  0001 C CNN
+	1    4100 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 1150 4100 1100
+Wire Wire Line
+	4100 1100 3800 1100
+$Comp
+L power:GND #PWR?
+U 1 1 5FC604B4
+P 4100 1350
+F 0 "#PWR?" H 4100 1100 50  0001 C CNN
+F 1 "GND" H 4100 1200 50  0000 C CNN
+F 2 "" H 4100 1350 50  0001 C CNN
+F 3 "" H 4100 1350 50  0001 C CNN
+	1    4100 1350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FC615F5
+P 4100 1750
+F 0 "R?" H 4159 1796 50  0000 L CNN
+F 1 "12k" H 4159 1705 50  0000 L CNN
+F 2 "" H 4100 1750 50  0001 C CNN
+F 3 "~" H 4100 1750 50  0001 C CNN
+	1    4100 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC615FB
+P 4100 1850
+F 0 "#PWR?" H 4100 1600 50  0001 C CNN
+F 1 "GND" H 4100 1700 50  0000 C CNN
+F 2 "" H 4100 1850 50  0001 C CNN
+F 3 "" H 4100 1850 50  0001 C CNN
+	1    4100 1850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 1650 4100 1600
+Wire Wire Line
+	4100 1600 3800 1600
+Wire Wire Line
+	4100 1600 4350 1600
+Connection ~ 4100 1600
+Wire Wire Line
+	4100 1100 4350 1100
+Connection ~ 4100 1100
+Text GLabel 4350 1100 2    50   Input ~ 0
+SIG_1+
+Text GLabel 4350 1600 2    50   Input ~ 0
+SIG_1-
+$Comp
+L Device:R_POT_Dual RV?
+U 1 1 5FC69DC1
+P 3700 2550
+F 0 "RV?" V 3650 2750 50  0000 R CNN
+F 1 "100k" V 3750 2800 50  0000 R CNN
+F 2 "" H 3950 2475 50  0001 C CNN
+F 3 "~" H 3950 2475 50  0001 C CNN
+	1    3700 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 2600 3600 2600
+Wire Wire Line
+	3600 2600 3600 2650
+$Comp
+L power:GND #PWR?
+U 1 1 5FC69DCA
+P 3600 2450
+F 0 "#PWR?" H 3600 2200 50  0001 C CNN
+F 1 "GND" H 3750 2450 50  0000 C CNN
+F 2 "" H 3600 2450 50  0001 C CNN
+F 3 "" H 3600 2450 50  0001 C CNN
+	1    3600 2450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2100 3600 2100
+Wire Wire Line
+	3600 2100 3600 2150
+$Comp
+L power:GND #PWR?
+U 1 1 5FC69DD2
+P 3600 2950
+F 0 "#PWR?" H 3600 2700 50  0001 C CNN
+F 1 "GND" H 3750 2950 50  0000 C CNN
+F 2 "" H 3600 2950 50  0001 C CNN
+F 3 "" H 3600 2950 50  0001 C CNN
+	1    3600 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FC69DD8
+P 4100 2450
+F 0 "R?" H 4159 2496 50  0000 L CNN
+F 1 "12k" H 4159 2405 50  0000 L CNN
+F 2 "" H 4100 2450 50  0001 C CNN
+F 3 "~" H 4100 2450 50  0001 C CNN
+	1    4100 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2350 4100 2300
+Wire Wire Line
+	4100 2300 3800 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5FC69DE0
+P 4100 2550
+F 0 "#PWR?" H 4100 2300 50  0001 C CNN
+F 1 "GND" H 4100 2400 50  0000 C CNN
+F 2 "" H 4100 2550 50  0001 C CNN
+F 3 "" H 4100 2550 50  0001 C CNN
+	1    4100 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FC69DE6
+P 4100 2950
+F 0 "R?" H 4159 2996 50  0000 L CNN
+F 1 "12k" H 4159 2905 50  0000 L CNN
+F 2 "" H 4100 2950 50  0001 C CNN
+F 3 "~" H 4100 2950 50  0001 C CNN
+	1    4100 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC69DEC
+P 4100 3050
+F 0 "#PWR?" H 4100 2800 50  0001 C CNN
+F 1 "GND" H 4100 2900 50  0000 C CNN
+F 2 "" H 4100 3050 50  0001 C CNN
+F 3 "" H 4100 3050 50  0001 C CNN
+	1    4100 3050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2850 4100 2800
+Wire Wire Line
+	4100 2800 3800 2800
+Wire Wire Line
+	4100 2800 4350 2800
+Connection ~ 4100 2800
+Wire Wire Line
+	4100 2300 4350 2300
+Connection ~ 4100 2300
+Text GLabel 4350 2300 2    50   Input ~ 0
+SIG_2+
+Text GLabel 4350 2800 2    50   Input ~ 0
+SIG_2-
+Text GLabel 3500 2100 0    50   Input ~ 0
+DSP_OUT2+
+Text GLabel 3500 2600 0    50   Input ~ 0
+DSP_OUT2-
+$EndSCHEMATC
