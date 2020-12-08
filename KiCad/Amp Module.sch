@@ -362,16 +362,6 @@ $EndComp
 Wire Wire Line
 	5100 2300 5100 2200
 Wire Notes Line
-	8100 600  8100 2850
-Wire Notes Line
-	8100 2850 11100 2850
-Wire Notes Line
-	11100 2850 11100 600 
-Wire Notes Line
-	11100 600  8100 600 
-Text Notes 8100 700  0    50   ~ 0
-PROTECTION
-Wire Notes Line
 	2900 600  2900 2850
 Wire Notes Line
 	2900 2850 8000 2850
@@ -385,10 +375,6 @@ Wire Notes Line
 	2900 700  3100 700 
 Wire Notes Line
 	3100 700  3100 600 
-Wire Notes Line
-	8100 700  8600 700 
-Wire Notes Line
-	8600 700  8600 600 
 Wire Notes Line
 	2800 600  2800 2850
 Wire Notes Line
@@ -630,8 +616,6 @@ Text GLabel 5000 800  0    50   Input ~ 0
 +5VDC
 Text GLabel 3650 1150 0    50   Input ~ 0
 DSP_MUTE1
-Text GLabel 9850 900  0    50   Input ~ 0
-+5VDC
 Text GLabel 1450 1550 0    50   Input ~ 0
 +12VDC
 Text GLabel 1950 1550 2    50   Input ~ 0
@@ -640,161 +624,6 @@ Text GLabel 1450 1950 0    50   Input ~ 0
 -12VDC
 Text GLabel 1950 1950 2    50   Input ~ 0
 +12VDC
-Text GLabel 8750 1250 0    50   Input ~ 0
-LM_PROTECT1
-Text GLabel 8750 1450 0    50   Input ~ 0
-LM_PROTECT3
-Text GLabel 8750 2500 0    50   Input ~ 0
-LM_PROTECT4
-Text GLabel 8750 2300 0    50   Input ~ 0
-LM_PROTECT2
-Text GLabel 8800 1650 0    50   Input ~ 0
-DSP_PROTECT1
-Text GLabel 8800 2700 0    50   Input ~ 0
-DSP_PROTECT2
-$Comp
-L Device:R_Small R?
-U 1 1 5FD513D9
-P 9700 1350
-F 0 "R?" V 9504 1350 50  0000 C CNN
-F 1 "10k" V 9595 1350 50  0000 C CNN
-F 2 "" H 9700 1350 50  0001 C CNN
-F 3 "~" H 9700 1350 50  0001 C CNN
-	1    9700 1350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Q_NPN_BCE Q?
-U 1 1 5FD53EF6
-P 10150 1350
-F 0 "Q?" H 10341 1396 50  0000 L CNN
-F 1 "NPN" H 10341 1305 50  0000 L CNN
-F 2 "" H 10350 1450 50  0001 C CNN
-F 3 "~" H 10150 1350 50  0001 C CNN
-	1    10150 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9950 1350 9800 1350
-Text GLabel 9800 1950 0    50   Input ~ 0
-+5VDC
-Wire Wire Line
-	9400 2400 9350 2400
-$Comp
-L Device:R_Small R?
-U 1 1 5FD699D4
-P 9700 2400
-F 0 "R?" V 9504 2400 50  0000 C CNN
-F 1 "10k" V 9595 2400 50  0000 C CNN
-F 2 "" H 9700 2400 50  0001 C CNN
-F 3 "~" H 9700 2400 50  0001 C CNN
-	1    9700 2400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9600 2400 9400 2400
-Connection ~ 9400 2400
-$Comp
-L Device:Q_NPN_BCE Q?
-U 1 1 5FD6C7D3
-P 10150 2400
-F 0 "Q?" H 10341 2446 50  0000 L CNN
-F 1 "NPN" H 10341 2355 50  0000 L CNN
-F 2 "" H 10350 2500 50  0001 C CNN
-F 3 "~" H 10150 2400 50  0001 C CNN
-	1    10150 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9950 2400 9800 2400
-$Comp
-L Device:LED_Small D?
-U 1 1 5FD85142
-P 10250 1050
-F 0 "D?" V 10296 980 50  0000 R CNN
-F 1 "LED_Small" V 10205 980 50  0000 R CNN
-F 2 "" V 10250 1050 50  0001 C CNN
-F 3 "~" V 10250 1050 50  0001 C CNN
-	1    10250 1050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5FD868D0
-P 10050 900
-F 0 "R?" V 10246 900 50  0000 C CNN
-F 1 "R_Small" V 10150 900 50  0000 C CNN
-F 2 "" H 10050 900 50  0001 C CNN
-F 3 "~" H 10050 900 50  0001 C CNN
-	1    10050 900 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FD8F4A8
-P 10250 1550
-F 0 "#PWR?" H 10250 1300 50  0001 C CNN
-F 1 "GND" H 10255 1377 50  0000 C CNN
-F 2 "" H 10250 1550 50  0001 C CNN
-F 3 "" H 10250 1550 50  0001 C CNN
-	1    10250 1550
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FDAB89B
-P 10250 2600
-F 0 "#PWR?" H 10250 2350 50  0001 C CNN
-F 1 "GND" H 10255 2427 50  0000 C CNN
-F 2 "" H 10250 2600 50  0001 C CNN
-F 3 "" H 10250 2600 50  0001 C CNN
-	1    10250 2600
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:LED_Small D?
-U 1 1 5FDAC898
-P 10250 2100
-F 0 "D?" V 10296 2030 50  0000 R CNN
-F 1 "LED_Small" V 10205 2030 50  0000 R CNN
-F 2 "" V 10250 2100 50  0001 C CNN
-F 3 "~" V 10250 2100 50  0001 C CNN
-	1    10250 2100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5FDAC89E
-P 10050 1950
-F 0 "R?" V 10246 1950 50  0000 C CNN
-F 1 "R_Small" V 10155 1950 50  0000 C CNN
-F 2 "" H 10050 1950 50  0001 C CNN
-F 3 "~" H 10050 1950 50  0001 C CNN
-	1    10050 1950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L 74xx:74LS32 U?
-U 1 1 5FDB9273
-P 9050 1350
-F 0 "U?" H 9050 1675 50  0000 C CNN
-F 1 "74LS32" H 9050 1584 50  0000 C CNN
-F 2 "" H 9050 1350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 9050 1350 50  0001 C CNN
-	1    9050 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS32 U?
-U 2 1 5FDBC748
-P 9050 2400
-F 0 "U?" H 9050 2725 50  0000 C CNN
-F 1 "74LS32" H 9050 2634 50  0000 C CNN
-F 2 "" H 9050 2400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 9050 2400 50  0001 C CNN
-	2    9050 2400
-	1    0    0    -1  
-$EndComp
 $Comp
 L 74xx:74LS32 U?
 U 3 1 5FDBE071
@@ -828,31 +657,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5850 7400 50  0001 C CNN
 	5    5850 7400
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9850 900  9950 900 
-Wire Wire Line
-	9800 1950 9950 1950
-Wire Wire Line
-	10150 1950 10250 1950
-Wire Wire Line
-	10250 1950 10250 2000
-Wire Wire Line
-	10250 900  10250 950 
-Wire Wire Line
-	10150 900  10250 900 
-Wire Wire Line
-	9350 1350 9400 1350
-Wire Wire Line
-	9400 2700 8800 2700
-Wire Wire Line
-	9400 2400 9400 2700
-Wire Wire Line
-	9400 1350 9400 1650
-Wire Wire Line
-	9400 1650 8800 1650
-Connection ~ 9400 1350
-Wire Wire Line
-	9400 1350 9600 1350
 Wire Notes Line
 	600  5450 600  7700
 Wire Notes Line

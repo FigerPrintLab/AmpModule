@@ -627,11 +627,11 @@ Text GLabel 1450 2450 0    50   Input ~ 0
 Text Notes 1000 2700 0    50   ~ 0
 READY2/4
 Text GLabel 5000 800  0    50   Input ~ 0
-+5VDCOUT
++5VDC
 Text GLabel 3650 1150 0    50   Input ~ 0
 DSP_MUTE1
 Text GLabel 9850 900  0    50   Input ~ 0
-+5VDCOUT
++5VDC
 Text GLabel 1450 1550 0    50   Input ~ 0
 +12VDC
 Text GLabel 1950 1550 2    50   Input ~ 0
@@ -677,7 +677,7 @@ $EndComp
 Wire Wire Line
 	9950 1350 9800 1350
 Text GLabel 9800 1950 0    50   Input ~ 0
-+5VDCOUT
++5VDC
 Wire Wire Line
 	9400 2400 9350 2400
 $Comp
@@ -962,7 +962,7 @@ Wire Wire Line
 Wire Wire Line
 	7600 800  7700 800 
 Text GLabel 7600 800  0    50   Input ~ 0
-+5VDCOUT
++5VDC
 Wire Wire Line
 	7700 800  7700 1050
 $Comp
@@ -1109,13 +1109,13 @@ LM_READY4
 Text GLabel 3500 4700 0    50   Input ~ 0
 LM_READY2
 Text GLabel 3500 3300 0    50   Input ~ 0
-+5VDCOUT
++5VDC
 Wire Wire Line
 	3500 3300 3800 3300
 Wire Wire Line
 	3800 3300 3800 3550
 Text GLabel 3500 4400 0    50   Input ~ 0
-+5VDCOUT
++5VDC
 Wire Wire Line
 	3500 4400 3800 4400
 Wire Wire Line
@@ -1210,4 +1210,174 @@ Wire Notes Line
 	2100 2950 2100 3050
 Wire Notes Line
 	2100 3050 2800 3050
+$Comp
+L Device:Q_PNP_BCE Q?
+U 1 1 5FD19867
+P 6350 3800
+F 0 "Q?" H 6541 3754 50  0000 L CNN
+F 1 "PNP" H 6541 3845 50  0000 L CNN
+F 2 "" H 6550 3900 50  0001 C CNN
+F 3 "~" H 6350 3800 50  0001 C CNN
+	1    6350 3800
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:Q_PNP_BCE Q?
+U 1 1 5FD1AD37
+P 6000 3550
+F 0 "Q?" H 6191 3504 50  0000 L CNN
+F 1 "PNP" H 6191 3595 50  0000 L CNN
+F 2 "" H 6200 3650 50  0001 C CNN
+F 3 "~" H 6000 3550 50  0001 C CNN
+	1    6000 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FD1F9EB
+P 6300 3550
+F 0 "R?" V 6104 3550 50  0000 C CNN
+F 1 "?" V 6195 3550 50  0000 C CNN
+F 2 "" H 6300 3550 50  0001 C CNN
+F 3 "~" H 6300 3550 50  0001 C CNN
+	1    6300 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FD235EC
+P 6450 3400
+F 0 "R?" H 6391 3354 50  0000 R CNN
+F 1 "R_Small" H 6391 3445 50  0000 R CNN
+F 2 "" H 6450 3400 50  0001 C CNN
+F 3 "~" H 6450 3400 50  0001 C CNN
+	1    6450 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6450 3600 6450 3550
+Wire Wire Line
+	6450 3550 6400 3550
+Wire Wire Line
+	6150 3800 5900 3800
+Wire Wire Line
+	5900 3800 5900 3750
+Wire Wire Line
+	6450 3550 6450 3500
+Connection ~ 6450 3550
+Text GLabel 5750 3250 0    50   Input ~ 0
++5VDC
+Wire Wire Line
+	5750 3250 5900 3250
+Wire Wire Line
+	6450 3250 6450 3300
+Wire Wire Line
+	5900 3350 5900 3250
+Connection ~ 5900 3250
+Wire Wire Line
+	5900 3250 6450 3250
+$Comp
+L Device:LED_Small D?
+U 1 1 5FD3C600
+P 6450 4100
+F 0 "D?" V 6496 4198 50  0000 L CNN
+F 1 "LED_Small" V 6405 4198 50  0000 L CNN
+F 2 "" V 6450 4100 50  0001 C CNN
+F 3 "~" V 6450 4100 50  0001 C CNN
+	1    6450 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FD3D03F
+P 6450 4400
+F 0 "#PWR?" H 6450 4150 50  0001 C CNN
+F 1 "GND" H 6455 4227 50  0000 C CNN
+F 2 "" H 6450 4400 50  0001 C CNN
+F 3 "" H 6450 4400 50  0001 C CNN
+	1    6450 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FD3D315
+P 6450 4300
+F 0 "R?" H 6391 4254 50  0000 R CNN
+F 1 "R_Small" H 6391 4345 50  0000 R CNN
+F 2 "" H 6450 4300 50  0001 C CNN
+F 3 "~" H 6450 4300 50  0001 C CNN
+	1    6450 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FD4CEC9
+P 5700 3800
+F 0 "R?" V 5804 3800 50  0000 C CNN
+F 1 "R_Small" V 5895 3800 50  0000 C CNN
+F 2 "" H 5700 3800 50  0001 C CNN
+F 3 "~" H 5700 3800 50  0001 C CNN
+	1    5700 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 3800 5900 3800
+Connection ~ 5900 3800
+Wire Wire Line
+	6100 4550 6100 4650
+Wire Wire Line
+	5800 4550 6100 4550
+Wire Wire Line
+	5600 4550 5550 4550
+$Comp
+L Device:R_Small R?
+U 1 1 5FCF1C56
+P 5700 4850
+F 0 "R?" V 5504 4850 50  0000 C CNN
+F 1 "R_Small" V 5595 4850 50  0000 C CNN
+F 2 "" H 5700 4850 50  0001 C CNN
+F 3 "~" H 5700 4850 50  0001 C CNN
+	1    5700 4850
+	0    1    1    0   
+$EndComp
+Text GLabel 5550 4550 0    50   Input ~ 0
++12VDC
+$Comp
+L Device:R_Small R?
+U 1 1 5FCF6AB1
+P 5700 4550
+F 0 "R?" V 5896 4550 50  0000 C CNN
+F 1 "R_Small" V 5805 4550 50  0000 C CNN
+F 2 "" H 5700 4550 50  0001 C CNN
+F 3 "~" H 5700 4550 50  0001 C CNN
+	1    5700 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 5FCED140
+P 6000 4850
+F 0 "Q?" H 6191 4896 50  0000 L CNN
+F 1 "NPN" H 6191 4805 50  0000 L CNN
+F 2 "" H 6200 4950 50  0001 C CNN
+F 3 "~" H 6000 4850 50  0001 C CNN
+	1    6000 4850
+	1    0    0    -1  
+$EndComp
+Text GLabel 5550 4850 0    50   Input ~ 0
+LM_PROTECT1
+Text GLabel 5500 3800 0    50   Input ~ 0
+LM_PROTECT1
+Wire Wire Line
+	5500 3800 5600 3800
+Text GLabel 5800 5100 0    50   Input ~ 0
+DSP_PROTECT1
+Wire Wire Line
+	5800 5100 6100 5100
+Wire Wire Line
+	6100 5100 6100 5050
+Wire Wire Line
+	5550 4850 5600 4850
+Text Notes 5000 3100 0    50   ~ 0
+Protection 1 signal
 $EndSCHEMATC
