@@ -24,66 +24,6 @@ F 3 "~" H 3950 1750 50  0001 C CNN
 	1    3950 1750
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0111
-U 1 1 5FCB2CF1
-P 950 3550
-F 0 "#PWR0111" H 950 3300 50  0001 C CNN
-F 1 "GND" V 850 3450 50  0000 R CNN
-F 2 "" H 950 3550 50  0001 C CNN
-F 3 "" H 950 3550 50  0001 C CNN
-	1    950  3550
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:Q_PNP_BCE Q1
-U 1 1 5FCB4822
-P 2700 3450
-F 0 "Q1" H 2891 3404 50  0000 L CNN
-F 1 "PNP" H 2891 3495 50  0000 L CNN
-F 2 "" H 2900 3550 50  0001 C CNN
-F 3 "~" H 2700 3450 50  0001 C CNN
-	1    2700 3450
-	1    0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R6
-U 1 1 5FCBB587
-P 2250 3950
-F 0 "R6" H 2191 3904 50  0000 R CNN
-F 1 "150" H 2191 3995 50  0000 R CNN
-F 2 "" H 2250 3950 50  0001 C CNN
-F 3 "~" H 2250 3950 50  0001 C CNN
-	1    2250 3950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0112
-U 1 1 5FCBD38B
-P 2050 3950
-F 0 "#PWR0112" H 2050 3700 50  0001 C CNN
-F 1 "GND" V 2055 3822 50  0000 R CNN
-F 2 "" H 2050 3950 50  0001 C CNN
-F 3 "" H 2050 3950 50  0001 C CNN
-	1    2050 3950
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	2050 3950 2150 3950
-Wire Notes Line
-	600  2950 600  6050
-Wire Notes Line
-	600  6050 3150 6050
-Wire Notes Line
-	3150 6050 3150 2950
-Wire Notes Line
-	3150 2950 600  2950
-Text Notes 600  3050 0    50   ~ 0
-MUTE
-Wire Notes Line
-	600  3050 800  3050
-Wire Notes Line
-	800  3050 800  2950
 Text GLabel 3750 950  0    50   Input ~ 0
 SDPWS
 Text GLabel 4250 950  2    50   Input ~ 0
@@ -92,8 +32,6 @@ Text GLabel 3750 1050 0    50   Input ~ 0
 RESERVED_A
 Text GLabel 4250 1050 2    50   Input ~ 0
 +5VDC
-Wire Wire Line
-	2750 3150 2800 3150
 Text GLabel 4250 1150 2    50   Input ~ 0
 LM_IN1+
 Text GLabel 3750 1250 0    50   Input ~ 0
@@ -297,32 +235,6 @@ Wire Wire Line
 Connection ~ 5250 2250
 Wire Wire Line
 	5250 2250 5250 2600
-Text GLabel 2750 3150 0    50   Input ~ 0
-+5VDC
-Text GLabel 1350 3350 0    50   Input ~ 0
-DSP_MUTE1
-$Comp
-L 74xx:74LS32 U2
-U 3 1 5FDBE071
-P 1650 3450
-F 0 "U2" H 1650 3775 50  0000 C CNN
-F 1 "74LS32" H 1650 3684 50  0000 C CNN
-F 2 "" H 1650 3450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 1650 3450 50  0001 C CNN
-	3    1650 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS32 U2
-U 4 1 5FDC0113
-P 1650 4700
-F 0 "U2" H 1650 5025 50  0000 C CNN
-F 1 "74LS32" H 1650 4934 50  0000 C CNN
-F 2 "" H 1650 4700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 1650 4700 50  0001 C CNN
-	4    1650 4700
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	2900 600  2900 2850
 Wire Notes Line
@@ -337,233 +249,6 @@ Wire Notes Line
 	2900 700  3400 700 
 Wire Notes Line
 	3400 700  3400 600 
-Wire Wire Line
-	2800 3150 2800 3250
-$Comp
-L Switch:SW_SPST SW1
-U 1 1 5FCB0CE5
-P 1150 3550
-F 0 "SW1" H 1150 3417 50  0000 C CNN
-F 1 "MUTE_BUTTON" H 1150 3326 50  0000 C CNN
-F 2 "" H 1150 3550 50  0001 C CNN
-F 3 "~" H 1150 3550 50  0001 C CNN
-	1    1150 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R5
-U 1 1 5FE5C9CF
-P 2300 3450
-F 0 "R5" V 2500 3450 50  0000 C CNN
-F 1 "10k" V 2400 3450 50  0000 C CNN
-F 2 "" H 2300 3450 50  0001 C CNN
-F 3 "~" H 2300 3450 50  0001 C CNN
-	1    2300 3450
-	0    -1   -1   0   
-$EndComp
-Text GLabel 2150 3600 2    50   Input ~ 0
-LM_MUTE1
-Text GLabel 2150 3750 2    50   Input ~ 0
-LM_MUTE3
-Wire Wire Line
-	2150 3600 2050 3600
-Wire Wire Line
-	2050 3600 2050 3450
-Wire Wire Line
-	2050 3450 1950 3450
-Wire Wire Line
-	2150 3750 2050 3750
-Wire Wire Line
-	2050 3750 2050 3600
-Connection ~ 2050 3600
-Wire Wire Line
-	2200 3450 2050 3450
-Connection ~ 2050 3450
-Wire Wire Line
-	2400 3450 2500 3450
-$Comp
-L Device:Q_PNP_BCE Q5
-U 1 1 5FD35CB5
-P 2700 4700
-F 0 "Q5" H 2891 4654 50  0000 L CNN
-F 1 "PNP" H 2891 4745 50  0000 L CNN
-F 2 "" H 2900 4800 50  0001 C CNN
-F 3 "~" H 2700 4700 50  0001 C CNN
-	1    2700 4700
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	2750 4400 2800 4400
-Text GLabel 2750 4400 0    50   Input ~ 0
-+5VDC
-Wire Wire Line
-	2800 4400 2800 4500
-$Comp
-L Switch:SW_SPST SW2
-U 1 1 5FD35CDA
-P 1150 4800
-F 0 "SW2" H 1150 4667 50  0000 C CNN
-F 1 "MUTE_BUTTON" H 1150 4576 50  0000 C CNN
-F 2 "" H 1150 4800 50  0001 C CNN
-F 3 "~" H 1150 4800 50  0001 C CNN
-	1    1150 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R13
-U 1 1 5FD35CE0
-P 2300 4700
-F 0 "R13" V 2500 4700 50  0000 C CNN
-F 1 "10k" V 2400 4700 50  0000 C CNN
-F 2 "" H 2300 4700 50  0001 C CNN
-F 3 "~" H 2300 4700 50  0001 C CNN
-	1    2300 4700
-	0    -1   -1   0   
-$EndComp
-Text GLabel 2150 4850 2    50   Input ~ 0
-LM_MUTE2
-Text GLabel 2150 5000 2    50   Input ~ 0
-LM_MUTE4
-Wire Wire Line
-	2150 4850 2050 4850
-Wire Wire Line
-	2050 4850 2050 4700
-Wire Wire Line
-	2050 4700 1950 4700
-Wire Wire Line
-	2150 5000 2050 5000
-Wire Wire Line
-	2050 5000 2050 4850
-Connection ~ 2050 4850
-Wire Wire Line
-	2200 4700 2050 4700
-Connection ~ 2050 4700
-Wire Wire Line
-	2400 4700 2500 4700
-$Comp
-L power:GND #PWR0118
-U 1 1 5FD390F2
-P 950 4800
-F 0 "#PWR0118" H 950 4550 50  0001 C CNN
-F 1 "GND" V 850 4700 50  0000 R CNN
-F 2 "" H 950 4800 50  0001 C CNN
-F 3 "" H 950 4800 50  0001 C CNN
-	1    950  4800
-	0    1    -1   0   
-$EndComp
-Text GLabel 1350 4600 0    50   Input ~ 0
-DSP_MUTE2
-$Comp
-L Device:LED_Small D1
-U 1 1 5FD89C16
-P 2600 3950
-F 0 "D1" H 2600 3835 50  0000 C CNN
-F 1 "LED_Small" H 2600 3744 50  0000 C CNN
-F 2 "" V 2600 3950 50  0001 C CNN
-F 3 "~" V 2600 3950 50  0001 C CNN
-	1    2600 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xGxx:74LVC2G08 U1
-U 1 1 5FE058EE
-P 5750 6600
-F 0 "U1" H 6000 6850 50  0000 C CNN
-F 1 "74LVC2G08" H 6000 6750 50  0000 C CNN
-F 2 "" H 5750 6600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 5750 6600 50  0001 C CNN
-	1    5750 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xGxx:74LVC2G08 U1
-U 2 1 5FE05FDB
-P 5750 7250
-F 0 "U1" H 6000 7500 50  0000 C CNN
-F 1 "74LVC2G08" H 6000 7400 50  0000 C CNN
-F 2 "" H 5750 7250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 5750 7250 50  0001 C CNN
-	2    5750 7250
-	1    0    0    -1  
-$EndComp
-Text GLabel 5450 6550 0    50   Input ~ 0
-LM_READY1
-Text GLabel 5450 6650 0    50   Input ~ 0
-LM_READY3
-Text GLabel 5450 7300 0    50   Input ~ 0
-LM_READY4
-Text GLabel 5450 7200 0    50   Input ~ 0
-LM_READY2
-Text GLabel 5450 6450 0    50   Input ~ 0
-+5VDC
-Wire Wire Line
-	5750 6450 5750 6500
-Text GLabel 5450 7100 0    50   Input ~ 0
-+5VDC
-$Comp
-L power:GND #PWR0120
-U 1 1 5FE11EAD
-P 5750 6700
-F 0 "#PWR0120" H 5750 6450 50  0001 C CNN
-F 1 "GND" H 5755 6527 50  0000 C CNN
-F 2 "" H 5750 6700 50  0001 C CNN
-F 3 "" H 5750 6700 50  0001 C CNN
-	1    5750 6700
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0121
-U 1 1 5FE12244
-P 5750 7350
-F 0 "#PWR0121" H 5750 7100 50  0001 C CNN
-F 1 "GND" H 5755 7177 50  0000 C CNN
-F 2 "" H 5750 7350 50  0001 C CNN
-F 3 "" H 5750 7350 50  0001 C CNN
-	1    5750 7350
-	-1   0    0    -1  
-$EndComp
-Text GLabel 6000 6600 2    50   Input ~ 0
-DSP_READY13
-Text GLabel 6000 7250 2    50   Input ~ 0
-DSP_READY24
-Wire Notes Line
-	4850 6150 4850 7650
-Wire Notes Line
-	4850 7650 6650 7650
-Wire Notes Line
-	6650 7650 6650 6150
-Wire Notes Line
-	6650 6150 4850 6150
-Text Notes 4850 6250 0    50   ~ 0
-READY
-Wire Notes Line
-	4850 6250 5100 6250
-Wire Notes Line
-	5100 6250 5100 6150
-$Comp
-L power:GND #PWR0119
-U 1 1 5FD9A1B0
-P 2250 5750
-F 0 "#PWR0119" H 2250 5500 50  0001 C CNN
-F 1 "GND" H 2255 5577 50  0000 C CNN
-F 2 "" H 2250 5750 50  0001 C CNN
-F 3 "" H 2250 5750 50  0001 C CNN
-	1    2250 5750
-	-1   0    0    -1  
-$EndComp
-Text GLabel 1150 5700 0    50   Input ~ 0
-+5VDC
-$Comp
-L 74xx:74LS32 U2
-U 5 1 5FDC1C22
-P 1650 5700
-F 0 "U2" V 1900 5700 50  0000 C CNN
-F 1 "74LS32" V 1400 5700 50  0000 C CNN
-F 2 "" H 1650 5700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 1650 5700 50  0001 C CNN
-	5    1650 5700
-	0    -1   -1   0   
-$EndComp
 Text Notes 600  6250 0    50   ~ 0
 VOLUME CONTROL
 Wire Notes Line
@@ -851,8 +536,6 @@ Text GLabel 3250 6950 0    50   Input ~ 0
 DSP_OUT2-
 Text GLabel 3250 6450 0    50   Input ~ 0
 DSP_OUT2+
-Text Notes 7000 6900 0    50   ~ 0
-TODO:\n  - Voltage output monitor\n  - Protection alert LEDs\n  - Check volume impedance
 Wire Notes Line
 	4750 7650 600  7650
 Wire Notes Line
@@ -861,53 +544,6 @@ Wire Notes Line
 	600  6150 4750 6150
 Wire Notes Line
 	600  6250 1300 6250
-Wire Wire Line
-	2700 3950 2800 3950
-Wire Wire Line
-	2800 3950 2800 3650
-Wire Wire Line
-	2500 3950 2350 3950
-$Comp
-L Device:R_Small R?
-U 1 1 5FF687CC
-P 2250 5200
-F 0 "R?" H 2191 5154 50  0000 R CNN
-F 1 "150" H 2191 5245 50  0000 R CNN
-F 2 "" H 2250 5200 50  0001 C CNN
-F 3 "~" H 2250 5200 50  0001 C CNN
-	1    2250 5200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FF687D2
-P 2050 5200
-F 0 "#PWR?" H 2050 4950 50  0001 C CNN
-F 1 "GND" V 2055 5072 50  0000 R CNN
-F 2 "" H 2050 5200 50  0001 C CNN
-F 3 "" H 2050 5200 50  0001 C CNN
-	1    2050 5200
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	2050 5200 2150 5200
-$Comp
-L Device:LED_Small D?
-U 1 1 5FF687D9
-P 2600 5200
-F 0 "D?" H 2600 5085 50  0000 C CNN
-F 1 "LED_Small" H 2600 4994 50  0000 C CNN
-F 2 "" V 2600 5200 50  0001 C CNN
-F 3 "~" V 2600 5200 50  0001 C CNN
-	1    2600 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 5200 2800 5200
-Wire Wire Line
-	2800 5200 2800 4900
-Wire Wire Line
-	2500 5200 2350 5200
 Text GLabel 1450 2550 0    50   Input ~ 0
 DSP_READY24
 Text GLabel 1950 950  2    50   Input ~ 0
@@ -920,8 +556,6 @@ Text GLabel 1950 1550 2    50   Input ~ 0
 -12VDC
 Text GLabel 1450 1550 0    50   Input ~ 0
 +12VDC
-Text Notes 1000 2700 0    50   ~ 0
-READY2/4
 Text GLabel 1450 2450 0    50   Input ~ 0
 +5VDC
 Text GLabel 1950 2450 2    50   Input ~ 0
@@ -965,7 +599,7 @@ Wire Wire Line
 Text GLabel 1950 2150 2    50   Input ~ 0
 DSP_VOUT2MON
 Text GLabel 1450 2150 0    50   Input ~ 0
-DSP_PROTECT2
+DSP_PROTECT24
 Text GLabel 1950 2050 2    50   Input ~ 0
 DSP_IOUT2MON
 Text GLabel 1450 2050 0    50   Input ~ 0
@@ -987,7 +621,7 @@ DSP_TEMPMON12
 Text GLabel 1450 1450 0    50   Input ~ 0
 DSP_IOUT1MON
 Text GLabel 1950 1350 2    50   Input ~ 0
-DSP_PROTECT1
+DSP_PROTECT13
 Text GLabel 1450 1350 0    50   Input ~ 0
 DSP_VOUT1MON
 $Comp
@@ -1035,18 +669,8 @@ F 3 "~" H 1650 1750 50  0001 C CNN
 	1    1650 1750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2250 5750 2250 5700
-Wire Wire Line
-	2250 5700 2150 5700
 Wire Notes Line
 	1300 6250 1300 6150
-Wire Wire Line
-	5450 6450 5750 6450
-Wire Wire Line
-	5750 7100 5750 7150
-Wire Wire Line
-	5450 7100 5750 7100
 $Comp
 L Device:R_Small R?
 U 1 1 5FE10550
@@ -1058,4 +682,587 @@ F 3 "~" H 1100 7250 50  0001 C CNN
 	1    1100 7250
 	0    1    1    0   
 $EndComp
+$Comp
+L 74xx:74LS08 U?
+U 1 1 5FDDAEF1
+P 2150 3500
+F 0 "U?" H 2150 3825 50  0000 C CNN
+F 1 "74LS08" H 2150 3734 50  0000 C CNN
+F 2 "" H 2150 3500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 2150 3500 50  0001 C CNN
+	1    2150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U?
+U 5 1 5FDE3944
+P 6250 5500
+F 0 "U?" V 6525 5500 50  0000 C CNN
+F 1 "74LS08" V 6616 5500 50  0000 C CNN
+F 2 "" H 6250 5500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 6250 5500 50  0001 C CNN
+	5    6250 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push_SPDT SW?
+U 1 1 5FDE8505
+P 1450 3400
+F 0 "SW?" H 1450 3685 50  0000 C CNN
+F 1 "SPDT" H 1450 3594 50  0000 C CNN
+F 2 "" H 1450 3400 50  0001 C CNN
+F 3 "~" H 1450 3400 50  0001 C CNN
+	1    1450 3400
+	-1   0    0    -1  
+$EndComp
+Text GLabel 1850 3600 0    50   Input ~ 0
+DSP_MUTE1
+$Comp
+L power:GND #PWR?
+U 1 1 5FDECB2B
+P 1250 3500
+F 0 "#PWR?" H 1250 3250 50  0001 C CNN
+F 1 "GND" V 1255 3372 50  0000 R CNN
+F 2 "" H 1250 3500 50  0001 C CNN
+F 3 "" H 1250 3500 50  0001 C CNN
+	1    1250 3500
+	0    1    1    0   
+$EndComp
+Text GLabel 1050 3300 0    50   Input ~ 0
++5VDC
+$Comp
+L Device:R_Small R?
+U 1 1 5FDEDA59
+P 1150 3300
+F 0 "R?" V 954 3300 50  0000 C CNN
+F 1 "100k" V 1045 3300 50  0000 C CNN
+F 2 "" H 1150 3300 50  0001 C CNN
+F 3 "~" H 1150 3300 50  0001 C CNN
+	1    1150 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 3400 1850 3400
+$Comp
+L Device:Q_PNP_BCE Q?
+U 1 1 5FE0BBEE
+P 3050 3500
+F 0 "Q?" H 3240 3454 50  0000 L CNN
+F 1 "S9012" H 3240 3545 50  0000 L CNN
+F 2 "" H 3250 3600 50  0001 C CNN
+F 3 "~" H 3050 3500 50  0001 C CNN
+	1    3050 3500
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FE0CB11
+P 2700 3500
+F 0 "R?" V 2504 3500 50  0000 C CNN
+F 1 "10k" V 2595 3500 50  0000 C CNN
+F 2 "" H 2700 3500 50  0001 C CNN
+F 3 "~" H 2700 3500 50  0001 C CNN
+	1    2700 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 3500 2850 3500
+Text GLabel 3050 3200 0    50   Input ~ 0
++5VDC
+Wire Wire Line
+	3050 3200 3150 3200
+Wire Wire Line
+	3150 3200 3150 3300
+Text GLabel 2600 3700 2    50   Input ~ 0
+LM_MUTE1
+Text GLabel 2600 3800 2    50   Input ~ 0
+LM_MUTE3
+$Comp
+L power:GND #PWR?
+U 1 1 5FE1D93C
+P 3150 4250
+F 0 "#PWR?" H 3150 4000 50  0001 C CNN
+F 1 "GND" H 3300 4200 50  0000 C CNN
+F 2 "" H 3150 4250 50  0001 C CNN
+F 3 "" H 3150 4250 50  0001 C CNN
+	1    3150 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4250 3150 4200
+$Comp
+L Device:LED_Small D?
+U 1 1 5FE12DD1
+P 3150 4100
+F 0 "D?" V 3196 4030 50  0000 R CNN
+F 1 "LED_Small" V 3105 4030 50  0000 R CNN
+F 2 "" V 3150 4100 50  0001 C CNN
+F 3 "~" V 3150 4100 50  0001 C CNN
+	1    3150 4100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 4000 3150 3950
+Wire Wire Line
+	3150 3750 3150 3700
+$Comp
+L Device:R_Small R?
+U 1 1 5FE163C4
+P 3150 3850
+F 0 "R?" H 3209 3896 50  0000 L CNN
+F 1 "150" H 3209 3805 50  0000 L CNN
+F 2 "" H 3150 3850 50  0001 C CNN
+F 3 "~" H 3150 3850 50  0001 C CNN
+	1    3150 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3800 2500 3800
+Connection ~ 2500 3700
+Wire Wire Line
+	2600 3700 2500 3700
+Wire Wire Line
+	2500 3800 2500 3700
+Wire Wire Line
+	2500 3700 2500 3500
+Wire Wire Line
+	2500 3500 2600 3500
+Connection ~ 2500 3500
+Wire Wire Line
+	2450 3500 2500 3500
+$Comp
+L Switch:SW_Push_SPDT SW?
+U 1 1 5FE4AB32
+P 4350 3400
+F 0 "SW?" H 4350 3685 50  0000 C CNN
+F 1 "SPDT" H 4350 3594 50  0000 C CNN
+F 2 "" H 4350 3400 50  0001 C CNN
+F 3 "~" H 4350 3400 50  0001 C CNN
+	1    4350 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FE4AB39
+P 4150 3500
+F 0 "#PWR?" H 4150 3250 50  0001 C CNN
+F 1 "GND" V 4155 3372 50  0000 R CNN
+F 2 "" H 4150 3500 50  0001 C CNN
+F 3 "" H 4150 3500 50  0001 C CNN
+	1    4150 3500
+	0    1    1    0   
+$EndComp
+Text GLabel 3950 3300 0    50   Input ~ 0
++5VDC
+$Comp
+L Device:R_Small R?
+U 1 1 5FE4AB40
+P 4050 3300
+F 0 "R?" V 3854 3300 50  0000 C CNN
+F 1 "100k" V 3945 3300 50  0000 C CNN
+F 2 "" H 4050 3300 50  0001 C CNN
+F 3 "~" H 4050 3300 50  0001 C CNN
+	1    4050 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 3400 4750 3400
+$Comp
+L Device:Q_PNP_BCE Q?
+U 1 1 5FE4AB47
+P 5950 3500
+F 0 "Q?" H 6140 3454 50  0000 L CNN
+F 1 "S9012" H 6140 3545 50  0000 L CNN
+F 2 "" H 6150 3600 50  0001 C CNN
+F 3 "~" H 5950 3500 50  0001 C CNN
+	1    5950 3500
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FE4AB4D
+P 5600 3500
+F 0 "R?" V 5404 3500 50  0000 C CNN
+F 1 "10k" V 5495 3500 50  0000 C CNN
+F 2 "" H 5600 3500 50  0001 C CNN
+F 3 "~" H 5600 3500 50  0001 C CNN
+	1    5600 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 3500 5750 3500
+Text GLabel 5950 3200 0    50   Input ~ 0
++5VDC
+Wire Wire Line
+	5950 3200 6050 3200
+Wire Wire Line
+	6050 3200 6050 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5FE4AB59
+P 6050 4250
+F 0 "#PWR?" H 6050 4000 50  0001 C CNN
+F 1 "GND" H 6200 4200 50  0000 C CNN
+F 2 "" H 6050 4250 50  0001 C CNN
+F 3 "" H 6050 4250 50  0001 C CNN
+	1    6050 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4250 6050 4200
+$Comp
+L Device:LED_Small D?
+U 1 1 5FE4AB60
+P 6050 4100
+F 0 "D?" V 6096 4030 50  0000 R CNN
+F 1 "LED_Small" V 6005 4030 50  0000 R CNN
+F 2 "" V 6050 4100 50  0001 C CNN
+F 3 "~" V 6050 4100 50  0001 C CNN
+	1    6050 4100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 4000 6050 3950
+Wire Wire Line
+	6050 3750 6050 3700
+$Comp
+L Device:R_Small R?
+U 1 1 5FE4AB68
+P 6050 3850
+F 0 "R?" H 6109 3896 50  0000 L CNN
+F 1 "150" H 6109 3805 50  0000 L CNN
+F 2 "" H 6050 3850 50  0001 C CNN
+F 3 "~" H 6050 3850 50  0001 C CNN
+	1    6050 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3800 5400 3800
+Connection ~ 5400 3700
+Wire Wire Line
+	5500 3700 5400 3700
+Wire Wire Line
+	5400 3800 5400 3700
+Wire Wire Line
+	5400 3700 5400 3500
+Wire Wire Line
+	5400 3500 5500 3500
+Connection ~ 5400 3500
+Wire Wire Line
+	5350 3500 5400 3500
+Text GLabel 4750 3600 0    50   Input ~ 0
+DSP_MUTE2
+Text GLabel 5500 3700 2    50   Input ~ 0
+LM_MUTE2
+Text GLabel 5500 3800 2    50   Input ~ 0
+LM_MUTE4
+$Comp
+L 74xx:74LS08 U?
+U 2 1 5FE8DFE9
+P 5050 3500
+F 0 "U?" H 5050 3825 50  0000 C CNN
+F 1 "74LS08" H 5050 3734 50  0000 C CNN
+F 2 "" H 5050 3500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 5050 3500 50  0001 C CNN
+	2    5050 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U?
+U 1 1 5FEA5516
+P 1600 5000
+F 0 "U?" H 1600 5325 50  0000 C CNN
+F 1 "74LS08" H 1600 5234 50  0000 C CNN
+F 2 "" H 1600 5000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 1600 5000 50  0001 C CNN
+	1    1600 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U?
+U 2 1 5FEA7A7F
+P 3950 5000
+F 0 "U?" H 3950 5325 50  0000 C CNN
+F 1 "74LS08" H 3950 5234 50  0000 C CNN
+F 2 "" H 3950 5000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 3950 5000 50  0001 C CNN
+	2    3950 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U?
+U 3 1 5FEAA383
+P 10700 5650
+F 0 "U?" H 10700 5975 50  0000 C CNN
+F 1 "74LS08" H 10700 5884 50  0000 C CNN
+F 2 "" H 10700 5650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 10700 5650 50  0001 C CNN
+	3    10700 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U?
+U 4 1 5FEAB584
+P 10700 6200
+F 0 "U?" H 10700 6525 50  0000 C CNN
+F 1 "74LS08" H 10700 6434 50  0000 C CNN
+F 2 "" H 10700 6200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 10700 6200 50  0001 C CNN
+	4    10700 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U?
+U 5 1 5FEACD32
+P 6250 5050
+F 0 "U?" V 5883 5050 50  0000 C CNN
+F 1 "74LS08" V 5974 5050 50  0000 C CNN
+F 2 "" H 6250 5050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 6250 5050 50  0001 C CNN
+	5    6250 5050
+	0    1    1    0   
+$EndComp
+Text GLabel 1300 4900 0    50   Input ~ 0
+LM_PROTECT1
+Text GLabel 1300 5100 0    50   Input ~ 0
+LM_PROTECT3
+Text GLabel 1750 5300 0    50   Input ~ 0
+DSP_PROTECT13
+$Comp
+L Device:Q_PNP_BCE Q?
+U 1 1 5FEB03E6
+P 2450 5000
+F 0 "Q?" H 2640 4954 50  0000 L CNN
+F 1 "S9012" H 2640 5045 50  0000 L CNN
+F 2 "" H 2650 5100 50  0001 C CNN
+F 3 "~" H 2450 5000 50  0001 C CNN
+	1    2450 5000
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FEB03EC
+P 2550 5750
+F 0 "#PWR?" H 2550 5500 50  0001 C CNN
+F 1 "GND" H 2700 5700 50  0000 C CNN
+F 2 "" H 2550 5750 50  0001 C CNN
+F 3 "" H 2550 5750 50  0001 C CNN
+	1    2550 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5750 2550 5700
+$Comp
+L Device:LED_Small D?
+U 1 1 5FEB03F3
+P 2550 5600
+F 0 "D?" V 2596 5530 50  0000 R CNN
+F 1 "LED_Small" V 2505 5530 50  0000 R CNN
+F 2 "" V 2550 5600 50  0001 C CNN
+F 3 "~" V 2550 5600 50  0001 C CNN
+	1    2550 5600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2550 5500 2550 5450
+Wire Wire Line
+	2550 5250 2550 5200
+$Comp
+L Device:R_Small R?
+U 1 1 5FEB03FB
+P 2550 5350
+F 0 "R?" H 2609 5396 50  0000 L CNN
+F 1 "150" H 2609 5305 50  0000 L CNN
+F 2 "" H 2550 5350 50  0001 C CNN
+F 3 "~" H 2550 5350 50  0001 C CNN
+	1    2550 5350
+	1    0    0    -1  
+$EndComp
+Text GLabel 2450 4700 0    50   Input ~ 0
++5VDC
+Wire Wire Line
+	2450 4700 2550 4700
+Wire Wire Line
+	2550 4700 2550 4800
+$Comp
+L Device:R_Small R?
+U 1 1 5FEB8BBC
+P 2100 5000
+F 0 "R?" V 1904 5000 50  0000 C CNN
+F 1 "10k" V 1995 5000 50  0000 C CNN
+F 2 "" H 2100 5000 50  0001 C CNN
+F 3 "~" H 2100 5000 50  0001 C CNN
+	1    2100 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 5000 2250 5000
+Wire Wire Line
+	1950 5000 2000 5000
+Wire Wire Line
+	1900 5000 1950 5000
+Connection ~ 1950 5000
+Wire Wire Line
+	1950 5300 1950 5000
+Wire Wire Line
+	1750 5300 1950 5300
+$Comp
+L Device:Q_PNP_BCE Q?
+U 1 1 5FED924C
+P 4800 5000
+F 0 "Q?" H 4990 4954 50  0000 L CNN
+F 1 "S9012" H 4990 5045 50  0000 L CNN
+F 2 "" H 5000 5100 50  0001 C CNN
+F 3 "~" H 4800 5000 50  0001 C CNN
+	1    4800 5000
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FED9252
+P 4900 5750
+F 0 "#PWR?" H 4900 5500 50  0001 C CNN
+F 1 "GND" H 5050 5700 50  0000 C CNN
+F 2 "" H 4900 5750 50  0001 C CNN
+F 3 "" H 4900 5750 50  0001 C CNN
+	1    4900 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 5750 4900 5700
+$Comp
+L Device:LED_Small D?
+U 1 1 5FED9259
+P 4900 5600
+F 0 "D?" V 4946 5530 50  0000 R CNN
+F 1 "LED_Small" V 4855 5530 50  0000 R CNN
+F 2 "" V 4900 5600 50  0001 C CNN
+F 3 "~" V 4900 5600 50  0001 C CNN
+	1    4900 5600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 5500 4900 5450
+Wire Wire Line
+	4900 5250 4900 5200
+$Comp
+L Device:R_Small R?
+U 1 1 5FED9261
+P 4900 5350
+F 0 "R?" H 4959 5396 50  0000 L CNN
+F 1 "150" H 4959 5305 50  0000 L CNN
+F 2 "" H 4900 5350 50  0001 C CNN
+F 3 "~" H 4900 5350 50  0001 C CNN
+	1    4900 5350
+	1    0    0    -1  
+$EndComp
+Text GLabel 4800 4700 0    50   Input ~ 0
++5VDC
+Wire Wire Line
+	4800 4700 4900 4700
+Wire Wire Line
+	4900 4700 4900 4800
+$Comp
+L Device:R_Small R?
+U 1 1 5FED926A
+P 4450 5000
+F 0 "R?" V 4254 5000 50  0000 C CNN
+F 1 "10k" V 4345 5000 50  0000 C CNN
+F 2 "" H 4450 5000 50  0001 C CNN
+F 3 "~" H 4450 5000 50  0001 C CNN
+	1    4450 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 5000 4600 5000
+Wire Wire Line
+	4300 5000 4350 5000
+Wire Wire Line
+	4250 5000 4300 5000
+Connection ~ 4300 5000
+Wire Wire Line
+	4300 5300 4300 5000
+Wire Wire Line
+	4100 5300 4300 5300
+Text GLabel 3650 4900 0    50   Input ~ 0
+LM_PROTECT2
+Text GLabel 3650 5100 0    50   Input ~ 0
+LM_PROTECT4
+Text GLabel 4100 5300 0    50   Input ~ 0
+DSP_PROTECT24
+$Comp
+L power:GND #PWR?
+U 1 1 5FEEE80D
+P 5700 5600
+F 0 "#PWR?" H 5700 5350 50  0001 C CNN
+F 1 "GND" H 5705 5427 50  0000 C CNN
+F 2 "" H 5700 5600 50  0001 C CNN
+F 3 "" H 5700 5600 50  0001 C CNN
+	1    5700 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 5600 5700 5500
+Wire Wire Line
+	5700 5050 5750 5050
+Wire Wire Line
+	5750 5500 5700 5500
+Connection ~ 5700 5500
+Wire Wire Line
+	5700 5500 5700 5050
+Wire Wire Line
+	6800 4700 6800 5050
+Wire Wire Line
+	6800 5500 6750 5500
+Wire Wire Line
+	6750 5050 6800 5050
+Connection ~ 6800 5050
+Wire Wire Line
+	6800 5050 6800 5500
+Wire Wire Line
+	6750 4700 6800 4700
+Text GLabel 6750 4700 0    50   Input ~ 0
++5VDC
+NoConn ~ 10400 5550
+NoConn ~ 10400 5750
+NoConn ~ 11000 5650
+NoConn ~ 10400 6100
+NoConn ~ 10400 6300
+NoConn ~ 11000 6200
+Text GLabel 6050 7250 2    50   Input ~ 0
+DSP_READY24
+Text GLabel 5450 7150 0    50   Input ~ 0
+LM_READY2
+Text GLabel 5450 7350 0    50   Input ~ 0
+LM_READY4
+Text GLabel 6050 6650 2    50   Input ~ 0
+DSP_READY13
+Text GLabel 5450 6750 0    50   Input ~ 0
+LM_READY3
+Text GLabel 5450 6550 0    50   Input ~ 0
+LM_READY1
+$Comp
+L 74xx:74LS08 U?
+U 4 1 5FDE25E4
+P 5750 7250
+F 0 "U?" H 5750 7575 50  0000 C CNN
+F 1 "74LS08" H 5750 7484 50  0000 C CNN
+F 2 "" H 5750 7250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 5750 7250 50  0001 C CNN
+	4    5750 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U?
+U 3 1 5FDDFE94
+P 5750 6650
+F 0 "U?" H 5750 6975 50  0000 C CNN
+F 1 "74LS08" H 5750 6884 50  0000 C CNN
+F 2 "" H 5750 6650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 5750 6650 50  0001 C CNN
+	3    5750 6650
+	1    0    0    -1  
+$EndComp
+Text Notes 7000 6800 0    50   ~ 0
+TODO:\n  - Voltage output monitor\n  - Check volume impedance
 $EndSCHEMATC
