@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
-Title "AmpModule front panel"
-Date "2020-12-07"
-Rev "v0"
+Sheet 1 4
+Title "AmpModule front panel (2way)"
+Date "2021-02-28"
+Rev "v0.1"
 Comp "Stakx"
 Comment1 ""
 Comment2 ""
@@ -249,275 +249,6 @@ Wire Notes Line
 	2900 700  3400 700 
 Wire Notes Line
 	3400 700  3400 600 
-Text Notes 600  6250 0    50   ~ 0
-VOLUME CONTROL
-Wire Notes Line
-	4750 6150 4750 7650
-Wire Wire Line
-	2100 7100 2250 7100
-Connection ~ 2100 7100
-Wire Wire Line
-	2100 7000 2100 7100
-Wire Wire Line
-	2250 7000 2100 7000
-Wire Wire Line
-	2100 6600 2250 6600
-Connection ~ 2100 6600
-Wire Wire Line
-	2100 6700 2100 6600
-Wire Wire Line
-	2250 6700 2100 6700
-Wire Wire Line
-	1800 6600 2100 6600
-Wire Wire Line
-	1800 7100 2100 7100
-Text GLabel 2250 7000 2    50   Input ~ 0
-LM_IN3-
-Text GLabel 2250 6700 2    50   Input ~ 0
-LM_IN3+
-Text GLabel 2250 6600 2    50   Input ~ 0
-LM_IN1+
-Text GLabel 2250 7100 2    50   Input ~ 0
-LM_IN1-
-Connection ~ 1800 6600
-Connection ~ 1800 7100
-Wire Wire Line
-	1800 7100 1500 7100
-Wire Wire Line
-	1800 7150 1800 7100
-$Comp
-L power:GND #PWR06
-U 1 1 5FC615FB
-P 1800 7350
-F 0 "#PWR06" H 1800 7100 50  0001 C CNN
-F 1 "GND" H 1800 7200 50  0000 C CNN
-F 2 "" H 1800 7350 50  0001 C CNN
-F 3 "" H 1800 7350 50  0001 C CNN
-	1    1800 7350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R5
-U 1 1 5FC615F5
-P 1800 7250
-F 0 "R5" H 1859 7296 50  0000 L CNN
-F 1 "12k" H 1859 7205 50  0000 L CNN
-F 2 "" H 1800 7250 50  0001 C CNN
-F 3 "~" H 1800 7250 50  0001 C CNN
-	1    1800 7250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR05
-U 1 1 5FC604B4
-P 1800 6850
-F 0 "#PWR05" H 1800 6600 50  0001 C CNN
-F 1 "GND" H 1800 6700 50  0000 C CNN
-F 2 "" H 1800 6850 50  0001 C CNN
-F 3 "" H 1800 6850 50  0001 C CNN
-	1    1800 6850
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1800 6600 1500 6600
-Wire Wire Line
-	1800 6650 1800 6600
-$Comp
-L Device:R_Small R4
-U 1 1 5FC5F926
-P 1800 6750
-F 0 "R4" H 1859 6796 50  0000 L CNN
-F 1 "12k" H 1859 6705 50  0000 L CNN
-F 2 "" H 1800 6750 50  0001 C CNN
-F 3 "~" H 1800 6750 50  0001 C CNN
-	1    1800 6750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1200 6450 1300 6450
-Wire Wire Line
-	1200 6950 1300 6950
-Text GLabel 1200 6950 0    50   Input ~ 0
-DSP_OUT1-
-$Comp
-L Device:R_POT_Dual RV1
-U 1 1 5FC5BCE3
-P 1400 6850
-F 0 "RV1" V 1350 7050 50  0000 R CNN
-F 1 "100k" V 1450 7100 50  0000 R CNN
-F 2 "" H 1650 6775 50  0001 C CNN
-F 3 "~" H 1650 6775 50  0001 C CNN
-	1    1400 6850
-	0    1    1    0   
-$EndComp
-Text GLabel 1200 6450 0    50   Input ~ 0
-DSP_OUT1+
-$Comp
-L Device:R_Small R1
-U 1 1 5FE05766
-P 1100 6750
-F 0 "R1" V 904 6750 50  0000 C CNN
-F 1 "?" V 995 6750 50  0000 C CNN
-F 2 "" H 1100 6750 50  0001 C CNN
-F 3 "~" H 1100 6750 50  0001 C CNN
-	1    1100 6750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1200 6750 1300 6750
-$Comp
-L power:GND #PWR02
-U 1 1 5FE18241
-P 1000 6750
-F 0 "#PWR02" H 1000 6500 50  0001 C CNN
-F 1 "GND" H 1050 6650 50  0000 L CNN
-F 2 "" H 1000 6750 50  0001 C CNN
-F 3 "" H 1000 6750 50  0001 C CNN
-	1    1000 6750
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR03
-U 1 1 5FE33459
-P 1300 7450
-F 0 "#PWR03" H 1300 7200 50  0001 C CNN
-F 1 "GND" H 1388 7413 50  0000 L CNN
-F 2 "" H 1300 7450 50  0001 C CNN
-F 3 "" H 1300 7450 50  0001 C CNN
-	1    1300 7450
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	4150 7100 4300 7100
-Connection ~ 4150 7100
-Wire Wire Line
-	4150 7000 4150 7100
-Wire Wire Line
-	4300 7000 4150 7000
-Wire Wire Line
-	4150 6600 4300 6600
-Connection ~ 4150 6600
-Wire Wire Line
-	4150 6700 4150 6600
-Wire Wire Line
-	4300 6700 4150 6700
-Wire Wire Line
-	3850 6600 4150 6600
-Wire Wire Line
-	3850 7100 4150 7100
-Connection ~ 3850 6600
-Connection ~ 3850 7100
-Wire Wire Line
-	3850 7100 3550 7100
-Wire Wire Line
-	3850 7150 3850 7100
-$Comp
-L power:GND #PWR014
-U 1 1 5FE35F21
-P 3850 7350
-F 0 "#PWR014" H 3850 7100 50  0001 C CNN
-F 1 "GND" H 3850 7200 50  0000 C CNN
-F 2 "" H 3850 7350 50  0001 C CNN
-F 3 "" H 3850 7350 50  0001 C CNN
-	1    3850 7350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R13
-U 1 1 5FE35F27
-P 3850 7250
-F 0 "R13" H 3909 7296 50  0000 L CNN
-F 1 "12k" H 3909 7205 50  0000 L CNN
-F 2 "" H 3850 7250 50  0001 C CNN
-F 3 "~" H 3850 7250 50  0001 C CNN
-	1    3850 7250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR013
-U 1 1 5FE35F2D
-P 3850 6850
-F 0 "#PWR013" H 3850 6600 50  0001 C CNN
-F 1 "GND" H 3850 6700 50  0000 C CNN
-F 2 "" H 3850 6850 50  0001 C CNN
-F 3 "" H 3850 6850 50  0001 C CNN
-	1    3850 6850
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3850 6600 3550 6600
-Wire Wire Line
-	3850 6650 3850 6600
-$Comp
-L Device:R_Small R12
-U 1 1 5FE35F35
-P 3850 6750
-F 0 "R12" H 3909 6796 50  0000 L CNN
-F 1 "12k" H 3909 6705 50  0000 L CNN
-F 2 "" H 3850 6750 50  0001 C CNN
-F 3 "~" H 3850 6750 50  0001 C CNN
-	1    3850 6750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3250 6450 3350 6450
-Wire Wire Line
-	3250 6950 3350 6950
-$Comp
-L Device:R_POT_Dual RV2
-U 1 1 5FE35F3F
-P 3450 6850
-F 0 "RV2" V 3400 7050 50  0000 R CNN
-F 1 "100k" V 3500 7100 50  0000 R CNN
-F 2 "" H 3700 6775 50  0001 C CNN
-F 3 "~" H 3700 6775 50  0001 C CNN
-	1    3450 6850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R9
-U 1 1 5FE35F46
-P 3150 6750
-F 0 "R9" V 2954 6750 50  0000 C CNN
-F 1 "?" V 3045 6750 50  0000 C CNN
-F 2 "" H 3150 6750 50  0001 C CNN
-F 3 "~" H 3150 6750 50  0001 C CNN
-	1    3150 6750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3250 6750 3350 6750
-$Comp
-L power:GND #PWR010
-U 1 1 5FE35F54
-P 3050 6750
-F 0 "#PWR010" H 3050 6500 50  0001 C CNN
-F 1 "GND" H 3100 6650 50  0000 L CNN
-F 2 "" H 3050 6750 50  0001 C CNN
-F 3 "" H 3050 6750 50  0001 C CNN
-	1    3050 6750
-	-1   0    0    -1  
-$EndComp
-Text GLabel 4300 6700 2    50   Input ~ 0
-LM_IN4+
-Text GLabel 4300 7000 2    50   Input ~ 0
-LM_IN4-
-Text GLabel 4300 7100 2    50   Input ~ 0
-LM_IN2-
-Text GLabel 4300 6600 2    50   Input ~ 0
-LM_IN2+
-Text GLabel 3250 6950 0    50   Input ~ 0
-DSP_OUT2-
-Text GLabel 3250 6450 0    50   Input ~ 0
-DSP_OUT2+
-Wire Notes Line
-	4750 7650 600  7650
-Wire Notes Line
-	600  7650 600  6150
-Wire Notes Line
-	600  6150 4750 6150
-Wire Notes Line
-	600  6250 1300 6250
 Text GLabel 1450 2550 0    50   Input ~ 0
 DSP_READY24
 Text GLabel 1950 950  2    50   Input ~ 0
@@ -642,19 +373,6 @@ F 2 "" H 1650 1750 50  0001 C CNN
 F 3 "~" H 1650 1750 50  0001 C CNN
 	1    1650 1750
 	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	1300 6250 1300 6150
-$Comp
-L Device:R_Small R3
-U 1 1 5FE10550
-P 1300 7350
-F 0 "R3" H 1241 7304 50  0000 R CNN
-F 1 "?" H 1241 7395 50  0000 R CNN
-F 2 "" H 1300 7350 50  0001 C CNN
-F 3 "~" H 1300 7350 50  0001 C CNN
-	1    1300 7350
-	-1   0    0    1   
 $EndComp
 $Comp
 L 74xx:74LS08 U2
@@ -1448,28 +1166,6 @@ Wire Notes Line
 Text Notes 7400 700  0    50   ~ 0
 VOUT MONITOR
 $Comp
-L power:GND #PWR012
-U 1 1 5FFAA506
-P 3350 7450
-F 0 "#PWR012" H 3350 7200 50  0001 C CNN
-F 1 "GND" H 3438 7413 50  0000 L CNN
-F 2 "" H 3350 7450 50  0001 C CNN
-F 3 "" H 3350 7450 50  0001 C CNN
-	1    3350 7450
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R11
-U 1 1 5FFAA50C
-P 3350 7350
-F 0 "R11" H 3291 7304 50  0000 R CNN
-F 1 "?" H 3291 7395 50  0000 R CNN
-F 2 "" H 3350 7350 50  0001 C CNN
-F 3 "~" H 3350 7350 50  0001 C CNN
-	1    3350 7350
-	-1   0    0    1   
-$EndComp
-$Comp
 L Comparator:LM393 U5
 U 3 1 5FDFEC1B
 P 8150 4450
@@ -2004,6 +1700,16 @@ Wire Wire Line
 	7600 4700 7800 4700
 Wire Wire Line
 	8650 4700 8500 4700
-Text Notes 7650 6200 0    50   ~ 0
-v2
+$Sheet
+S 600  6250 600  450 
+U 603C98A4
+F0 "filter" 50
+F1 "filter.sch" 50
+$EndSheet
+$Sheet
+S 1400 6250 600  450 
+U 60411D03
+F0 "trim" 50
+F1 "trim.sch" 50
+$EndSheet
 $EndSCHEMATC
