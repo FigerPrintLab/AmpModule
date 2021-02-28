@@ -2004,4 +2004,6 @@ Wire Wire Line
 	7600 4700 7800 4700
 Wire Wire Line
 	8650 4700 8500 4700
+Text Notes 7650 6200 0    50   ~ 0
+v2
 $EndSCHEMATC
