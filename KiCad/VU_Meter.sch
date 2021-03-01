@@ -1,0 +1,739 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Comparator:LM393 U?
+U 3 1 60442CB7
+P 7350 4050
+F 0 "U?" V 7050 4050 50  0000 C CNN
+F 1 "LM393" V 7150 4050 50  0000 C CNN
+F 2 "" H 7350 4050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 7350 4050 50  0001 C CNN
+	3    7350 4050
+	0    1    1    0   
+$EndComp
+Text GLabel 7850 4650 2    50   Input ~ 0
++5VDC
+$Comp
+L Comparator:LM393 U?
+U 1 1 60442CBE
+P 9550 3750
+F 0 "U?" H 9550 3950 50  0000 C CNN
+F 1 "LM393" H 9550 3750 50  0000 C CNN
+F 2 "" H 9550 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 9550 3750 50  0001 C CNN
+	1    9550 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM393 U?
+U 2 1 60442CC4
+P 9550 4250
+F 0 "U?" H 9550 4450 50  0000 C CNN
+F 1 "LM393" H 9550 4250 50  0000 C CNN
+F 2 "" H 9550 4250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 9550 4250 50  0001 C CNN
+	2    9550 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM393 U?
+U 2 1 60442CCA
+P 9550 5250
+F 0 "U?" H 9550 5450 50  0000 C CNN
+F 1 "LM393" H 9550 5250 50  0000 C CNN
+F 2 "" H 9550 5250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 9550 5250 50  0001 C CNN
+	2    9550 5250
+	1    0    0    -1  
+$EndComp
+Text GLabel 8950 3300 0    50   Input ~ 0
++5VDC
+$Comp
+L Device:R_Small R?
+U 1 1 60442CD1
+P 9100 3500
+F 0 "R?" H 9041 3546 50  0000 R CNN
+F 1 "R_Small" H 9041 3455 50  0000 R CNN
+F 2 "" H 9100 3500 50  0001 C CNN
+F 3 "~" H 9100 3500 50  0001 C CNN
+	1    9100 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3300 9100 3300
+Wire Wire Line
+	9100 3300 9100 3400
+$Comp
+L Device:R_Small R?
+U 1 1 60442CD9
+P 9100 4000
+F 0 "R?" H 9041 4046 50  0000 R CNN
+F 1 "R_Small" H 9041 3955 50  0000 R CNN
+F 2 "" H 9100 4000 50  0001 C CNN
+F 3 "~" H 9100 4000 50  0001 C CNN
+	1    9100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60442CDF
+P 9100 4500
+F 0 "R?" H 9041 4546 50  0000 R CNN
+F 1 "R_Small" H 9041 4455 50  0000 R CNN
+F 2 "" H 9100 4500 50  0001 C CNN
+F 3 "~" H 9100 4500 50  0001 C CNN
+	1    9100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60442CE5
+P 9100 5000
+F 0 "R?" H 9041 5046 50  0000 R CNN
+F 1 "R_Small" H 9041 4955 50  0000 R CNN
+F 2 "" H 9100 5000 50  0001 C CNN
+F 3 "~" H 9100 5000 50  0001 C CNN
+	1    9100 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60442CEB
+P 9100 5300
+F 0 "R?" H 9041 5346 50  0000 R CNN
+F 1 "R_Small" H 9041 5255 50  0000 R CNN
+F 2 "" H 9100 5300 50  0001 C CNN
+F 3 "~" H 9100 5300 50  0001 C CNN
+	1    9100 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60442CF1
+P 9100 5400
+F 0 "#PWR?" H 9100 5150 50  0001 C CNN
+F 1 "GND" H 9100 5250 50  0000 C CNN
+F 2 "" H 9100 5400 50  0001 C CNN
+F 3 "" H 9100 5400 50  0001 C CNN
+	1    9100 5400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 60442CF7
+P 10000 3750
+F 0 "D?" H 10000 3985 50  0000 C CNN
+F 1 "LED_Small" H 10000 3894 50  0000 C CNN
+F 2 "" V 10000 3750 50  0001 C CNN
+F 3 "~" V 10000 3750 50  0001 C CNN
+	1    10000 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 60442CFD
+P 10000 4250
+F 0 "D?" H 10000 4485 50  0000 C CNN
+F 1 "LED_Small" H 10000 4394 50  0000 C CNN
+F 2 "" V 10000 4250 50  0001 C CNN
+F 3 "~" V 10000 4250 50  0001 C CNN
+	1    10000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 60442D03
+P 10000 4750
+F 0 "D?" H 10000 4985 50  0000 C CNN
+F 1 "LED_Small" H 10000 4894 50  0000 C CNN
+F 2 "" V 10000 4750 50  0001 C CNN
+F 3 "~" V 10000 4750 50  0001 C CNN
+	1    10000 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 60442D09
+P 10000 5250
+F 0 "D?" H 10000 5485 50  0000 C CNN
+F 1 "LED_Small" H 10000 5394 50  0000 C CNN
+F 2 "" V 10000 5250 50  0001 C CNN
+F 3 "~" V 10000 5250 50  0001 C CNN
+	1    10000 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 5250 9850 5250
+Wire Wire Line
+	9900 4750 9850 4750
+Wire Wire Line
+	9900 4250 9850 4250
+Wire Wire Line
+	9900 3750 9850 3750
+Wire Wire Line
+	9100 3300 10200 3300
+Wire Wire Line
+	10200 3300 10200 3750
+Wire Wire Line
+	10200 5250 10100 5250
+Connection ~ 9100 3300
+Wire Wire Line
+	10100 4750 10200 4750
+Connection ~ 10200 4750
+Wire Wire Line
+	10200 4750 10200 5250
+Wire Wire Line
+	10100 4250 10200 4250
+Connection ~ 10200 4250
+Wire Wire Line
+	10200 4250 10200 4750
+Wire Wire Line
+	10100 3750 10200 3750
+Connection ~ 10200 3750
+Wire Wire Line
+	10200 3750 10200 4250
+Wire Notes Line
+	10300 5700 10300 550 
+Wire Notes Line
+	10300 550  6600 550 
+Text Notes 6600 650  0    50   ~ 0
+VOUT MONITOR
+$Comp
+L Comparator:LM393 U?
+U 3 1 60442D23
+P 7350 4400
+F 0 "U?" V 7050 4400 50  0000 C CNN
+F 1 "LM393" V 7150 4400 50  0000 C CNN
+F 2 "" H 7350 4400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 7350 4400 50  0001 C CNN
+	3    7350 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Comparator:LM393 U?
+U 3 1 60442D29
+P 7350 4750
+F 0 "U?" V 7050 4750 50  0000 C CNN
+F 1 "LM393" V 7150 4750 50  0000 C CNN
+F 2 "" H 7350 4750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 7350 4750 50  0001 C CNN
+	3    7350 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Comparator:LM393 U?
+U 3 1 60442D2F
+P 7350 5100
+F 0 "U?" V 7050 5100 50  0000 C CNN
+F 1 "LM393" V 7150 5100 50  0000 C CNN
+F 2 "" H 7350 5100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 7350 5100 50  0001 C CNN
+	3    7350 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Comparator:LM393 U?
+U 3 1 60442D35
+P 7350 5450
+F 0 "U?" V 7050 5450 50  0000 C CNN
+F 1 "LM393" V 7150 5450 50  0000 C CNN
+F 2 "" H 7350 5450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 7350 5450 50  0001 C CNN
+	3    7350 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 5350 7700 5350
+Wire Wire Line
+	7700 5350 7700 5000
+Wire Wire Line
+	7700 3950 7650 3950
+Wire Wire Line
+	7650 4300 7700 4300
+Connection ~ 7700 4300
+Wire Wire Line
+	7700 4300 7700 3950
+Wire Wire Line
+	7650 4650 7700 4650
+Connection ~ 7700 4650
+Wire Wire Line
+	7700 4650 7700 4300
+Wire Wire Line
+	7650 5000 7700 5000
+Connection ~ 7700 5000
+Wire Wire Line
+	7700 5000 7700 4650
+$Comp
+L power:GND #PWR?
+U 1 1 60442D47
+P 6800 4750
+F 0 "#PWR?" H 6800 4500 50  0001 C CNN
+F 1 "GND" H 6800 4600 50  0000 C CNN
+F 2 "" H 6800 4750 50  0001 C CNN
+F 3 "" H 6800 4750 50  0001 C CNN
+	1    6800 4750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3950 7000 3950
+Wire Wire Line
+	7050 5350 7000 5350
+Wire Wire Line
+	7050 5000 7000 5000
+Wire Wire Line
+	7000 3950 7000 4300
+Connection ~ 7000 5000
+Wire Wire Line
+	7000 5000 7000 5350
+Wire Wire Line
+	7050 4650 7000 4650
+Connection ~ 7000 4650
+Wire Wire Line
+	7000 4650 7000 5000
+Wire Wire Line
+	7050 4300 7000 4300
+Connection ~ 7000 4300
+Wire Wire Line
+	7000 4300 7000 4650
+Text Notes 7850 1750 2    50   ~ 0
+S2=1
+Text Notes 7850 1650 2    50   ~ 0
+S2=0
+Text GLabel 7250 1700 0    50   Input ~ 0
+LM_VOUT4MON
+Text GLabel 7250 1600 0    50   Input ~ 0
+LM_VOUT2MON
+Text GLabel 7250 1400 0    50   Input ~ 0
+LM_VOUT3MON
+Text GLabel 7250 1300 0    50   Input ~ 0
+LM_VOUT1MON
+Text Notes 7850 1450 2    50   ~ 0
+S1=1
+Text Notes 7850 1350 2    50   ~ 0
+S1=0
+Wire Wire Line
+	8300 2250 7850 2250
+Wire Wire Line
+	8300 2000 8300 2250
+Wire Wire Line
+	8250 2000 8300 2000
+Wire Wire Line
+	7650 750  7650 800 
+Wire Wire Line
+	7600 750  7650 750 
+Text GLabel 7600 750  0    50   Input ~ 0
++5VDC
+Wire Wire Line
+	7850 2250 7850 2200
+Connection ~ 7850 2250
+Wire Wire Line
+	7750 2250 7750 2200
+Wire Wire Line
+	7850 2250 7750 2250
+Wire Wire Line
+	7850 2300 7850 2250
+$Comp
+L Analog_Switch:CD4053B U?
+U 1 1 60442D6C
+P 7750 1500
+F 0 "U?" H 7550 2250 50  0000 C CNN
+F 1 "CD4053B" H 7550 2150 50  0000 C CNN
+F 2 "" H 7900 750 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4052b.pdf" H 7730 1700 50  0001 C CNN
+	1    7750 1500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM393 U?
+U 1 1 60442D72
+P 9550 4750
+F 0 "U?" H 9550 4950 50  0000 C CNN
+F 1 "LM393" H 9550 4750 50  0000 C CNN
+F 2 "" H 9550 4750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 9550 4750 50  0001 C CNN
+	1    9550 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 4600 9100 4650
+Wire Wire Line
+	9100 5100 9100 5150
+Wire Wire Line
+	9100 4100 9100 4150
+Wire Wire Line
+	9100 3600 9100 3650
+Wire Wire Line
+	9250 3650 9100 3650
+Connection ~ 9100 3650
+Wire Wire Line
+	9100 3650 9100 3900
+Wire Wire Line
+	9250 4150 9100 4150
+Connection ~ 9100 4150
+Wire Wire Line
+	9100 4150 9100 4400
+Wire Wire Line
+	9250 4650 9100 4650
+Connection ~ 9100 4650
+Wire Wire Line
+	9100 4650 9100 4900
+Wire Wire Line
+	9250 5150 9100 5150
+Connection ~ 9100 5150
+Wire Wire Line
+	9100 5150 9100 5200
+$Comp
+L Comparator:LM393 U?
+U 1 1 60442D88
+P 9550 1200
+F 0 "U?" H 9550 1400 50  0000 C CNN
+F 1 "LM393" H 9550 1200 50  0000 C CNN
+F 2 "" H 9550 1200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 9550 1200 50  0001 C CNN
+	1    9550 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM393 U?
+U 2 1 60442D8E
+P 9550 1700
+F 0 "U?" H 9550 1900 50  0000 C CNN
+F 1 "LM393" H 9550 1700 50  0000 C CNN
+F 2 "" H 9550 1700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 9550 1700 50  0001 C CNN
+	2    9550 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM393 U?
+U 2 1 60442D94
+P 9550 2700
+F 0 "U?" H 9550 2900 50  0000 C CNN
+F 1 "LM393" H 9550 2700 50  0000 C CNN
+F 2 "" H 9550 2700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 9550 2700 50  0001 C CNN
+	2    9550 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 8950 750  0    50   Input ~ 0
++5VDC
+$Comp
+L Device:R_Small R?
+U 1 1 60442D9B
+P 9100 950
+F 0 "R?" H 9041 996 50  0000 R CNN
+F 1 "R_Small" H 9041 905 50  0000 R CNN
+F 2 "" H 9100 950 50  0001 C CNN
+F 3 "~" H 9100 950 50  0001 C CNN
+	1    9100 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 750  9100 750 
+Wire Wire Line
+	9100 750  9100 850 
+$Comp
+L Device:R_Small R?
+U 1 1 60442DA3
+P 9100 1450
+F 0 "R?" H 9041 1496 50  0000 R CNN
+F 1 "R_Small" H 9041 1405 50  0000 R CNN
+F 2 "" H 9100 1450 50  0001 C CNN
+F 3 "~" H 9100 1450 50  0001 C CNN
+	1    9100 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60442DA9
+P 9100 1950
+F 0 "R?" H 9041 1996 50  0000 R CNN
+F 1 "R_Small" H 9041 1905 50  0000 R CNN
+F 2 "" H 9100 1950 50  0001 C CNN
+F 3 "~" H 9100 1950 50  0001 C CNN
+	1    9100 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60442DAF
+P 9100 2450
+F 0 "R?" H 9041 2496 50  0000 R CNN
+F 1 "R_Small" H 9041 2405 50  0000 R CNN
+F 2 "" H 9100 2450 50  0001 C CNN
+F 3 "~" H 9100 2450 50  0001 C CNN
+	1    9100 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60442DB5
+P 9100 2800
+F 0 "R?" H 9041 2846 50  0000 R CNN
+F 1 "R_Small" H 9041 2755 50  0000 R CNN
+F 2 "" H 9100 2800 50  0001 C CNN
+F 3 "~" H 9100 2800 50  0001 C CNN
+	1    9100 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60442DBB
+P 9100 2900
+F 0 "#PWR?" H 9100 2650 50  0001 C CNN
+F 1 "GND" H 9100 2750 50  0000 C CNN
+F 2 "" H 9100 2900 50  0001 C CNN
+F 3 "" H 9100 2900 50  0001 C CNN
+	1    9100 2900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 60442DC1
+P 10000 1200
+F 0 "D?" H 10000 1435 50  0000 C CNN
+F 1 "LED_Small" H 10000 1344 50  0000 C CNN
+F 2 "" V 10000 1200 50  0001 C CNN
+F 3 "~" V 10000 1200 50  0001 C CNN
+	1    10000 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 60442DC7
+P 10000 1700
+F 0 "D?" H 10000 1935 50  0000 C CNN
+F 1 "LED_Small" H 10000 1844 50  0000 C CNN
+F 2 "" V 10000 1700 50  0001 C CNN
+F 3 "~" V 10000 1700 50  0001 C CNN
+	1    10000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 60442DCD
+P 10000 2200
+F 0 "D?" H 10000 2435 50  0000 C CNN
+F 1 "LED_Small" H 10000 2344 50  0000 C CNN
+F 2 "" V 10000 2200 50  0001 C CNN
+F 3 "~" V 10000 2200 50  0001 C CNN
+	1    10000 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 60442DD3
+P 10000 2700
+F 0 "D?" H 10000 2935 50  0000 C CNN
+F 1 "LED_Small" H 10000 2844 50  0000 C CNN
+F 2 "" V 10000 2700 50  0001 C CNN
+F 3 "~" V 10000 2700 50  0001 C CNN
+	1    10000 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 2700 9850 2700
+Wire Wire Line
+	9900 2200 9850 2200
+Wire Wire Line
+	9900 1700 9850 1700
+Wire Wire Line
+	9900 1200 9850 1200
+Wire Wire Line
+	9100 750  10200 750 
+Wire Wire Line
+	10200 750  10200 1200
+Wire Wire Line
+	10200 2700 10100 2700
+Connection ~ 9100 750 
+Wire Wire Line
+	10100 2200 10200 2200
+Connection ~ 10200 2200
+Wire Wire Line
+	10200 2200 10200 2700
+Wire Wire Line
+	10100 1700 10200 1700
+Connection ~ 10200 1700
+Wire Wire Line
+	10200 1700 10200 2200
+Wire Wire Line
+	10100 1200 10200 1200
+Connection ~ 10200 1200
+Wire Wire Line
+	10200 1200 10200 1700
+$Comp
+L Comparator:LM393 U?
+U 1 1 60442DEA
+P 9550 2200
+F 0 "U?" H 9550 2400 50  0000 C CNN
+F 1 "LM393" H 9550 2200 50  0000 C CNN
+F 2 "" H 9550 2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 9550 2200 50  0001 C CNN
+	1    9550 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 2050 9100 2100
+Wire Wire Line
+	9100 2550 9100 2600
+Wire Wire Line
+	9100 1550 9100 1600
+Wire Wire Line
+	9100 1050 9100 1100
+Wire Wire Line
+	9250 1100 9100 1100
+Connection ~ 9100 1100
+Wire Wire Line
+	9100 1100 9100 1350
+Wire Wire Line
+	9250 1600 9100 1600
+Connection ~ 9100 1600
+Wire Wire Line
+	9100 1600 9100 1850
+Wire Wire Line
+	9250 2100 9100 2100
+Connection ~ 9100 2100
+Wire Wire Line
+	9100 2100 9100 2350
+Wire Wire Line
+	9250 2600 9100 2600
+Connection ~ 9100 2600
+Wire Wire Line
+	9100 2600 9100 2700
+Wire Notes Line
+	7200 650  7200 550 
+Wire Notes Line
+	7200 650  6600 650 
+Wire Wire Line
+	9200 1300 9200 1800
+Wire Wire Line
+	9200 2800 9250 2800
+Connection ~ 9200 1300
+Wire Wire Line
+	9200 1300 9250 1300
+Wire Wire Line
+	9250 2300 9200 2300
+Connection ~ 9200 2300
+Wire Wire Line
+	9200 2300 9200 2800
+Wire Wire Line
+	9250 1800 9200 1800
+Connection ~ 9200 1800
+Wire Wire Line
+	9200 1800 9200 2300
+Wire Wire Line
+	8250 1600 8600 1600
+Wire Wire Line
+	9250 5350 9200 5350
+Wire Wire Line
+	9200 5350 9200 4850
+Wire Wire Line
+	9200 3850 9250 3850
+Wire Wire Line
+	9250 4350 9200 4350
+Connection ~ 9200 4350
+Wire Wire Line
+	9200 4350 9200 3850
+Wire Wire Line
+	9250 4850 9200 4850
+Connection ~ 9200 4850
+Wire Wire Line
+	9200 4850 9200 4350
+Text GLabel 8850 1400 0    50   Input ~ 0
+DSP_VOUT1MON
+Text GLabel 8250 1000 2    50   Input ~ 0
+S1
+Text GLabel 8250 1100 2    50   Input ~ 0
+S2
+Text GLabel 8550 3850 0    50   Input ~ 0
+DSP_VOUT2MON
+Wire Wire Line
+	8250 1300 8900 1300
+Wire Wire Line
+	8900 1400 8900 1300
+Wire Wire Line
+	8850 1400 8900 1400
+Connection ~ 8900 1300
+Wire Wire Line
+	8900 1300 9200 1300
+$Comp
+L power:GND #PWR?
+U 1 1 60442E1F
+P 7850 2300
+F 0 "#PWR?" H 7850 2050 50  0001 C CNN
+F 1 "GND" H 7700 2200 50  0000 C CNN
+F 2 "" H 7850 2300 50  0001 C CNN
+F 3 "" H 7850 2300 50  0001 C CNN
+	1    7850 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 8100 3400 2    50   Input ~ 0
+S2
+Text GLabel 8100 2750 2    50   Input ~ 0
+S1
+Text GLabel 7500 2850 0    50   Input ~ 0
+LM_VOUT1MON
+Text GLabel 7500 2650 0    50   Input ~ 0
+LM_VOUT3MON
+$Comp
+L Comparator:LM393 U?
+U 1 1 60442E29
+P 7800 2750
+F 0 "U?" H 7800 2950 50  0000 C CNN
+F 1 "LM393" H 7800 2750 50  0000 C CNN
+F 2 "" H 7800 2750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 7800 2750 50  0001 C CNN
+	1    7800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM393 U?
+U 2 1 60442E2F
+P 7800 3400
+F 0 "U?" H 7800 3600 50  0000 C CNN
+F 1 "LM393" H 7800 3400 50  0000 C CNN
+F 2 "" H 7800 3400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 7800 3400 50  0001 C CNN
+	2    7800 3400
+	1    0    0    -1  
+$EndComp
+Text GLabel 7500 3500 0    50   Input ~ 0
+LM_VOUT2MON
+Text GLabel 7500 3300 0    50   Input ~ 0
+LM_VOUT4MON
+NoConn ~ 8250 1900
+NoConn ~ 8250 1200
+NoConn ~ 7250 1900
+NoConn ~ 7250 2000
+Wire Notes Line
+	6600 550  6600 5700
+Wire Notes Line
+	6600 5700 10300 5700
+Wire Wire Line
+	8550 3850 8600 3850
+Connection ~ 9200 3850
+Wire Wire Line
+	8600 1600 8600 3850
+Connection ~ 8600 3850
+Wire Wire Line
+	8600 3850 9200 3850
+Wire Wire Line
+	6800 4750 6800 4650
+Wire Wire Line
+	6800 4650 7000 4650
+Wire Wire Line
+	7850 4650 7700 4650
+$EndSCHEMATC
