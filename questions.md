@@ -7,4 +7,5 @@
 5. E' ammesso il ribaltamento dei segnali (180°) nel `TRIM`?
 6. Essendo richiesti almeno 3 rotary switch, l'assemblamento (piazzare i resistori e i cavi dalla board agli switch) potrebbe essere oneroso.
 7. L'amplificatore dispone di 4 canali perciò i segnali che controllano i `VU meter` dovranno essere spartiti sensatamente tra i 2 segnali che competono a uno specifico canale in ingresso.
-8. Non credo di aver compreso fino in fondo la logica dei `VU meter`: sono 3 i LED che fungono da indicatori di livello? Per quanto riguarda il LED di `TEMP` e `PROTECT`, esso è incluso in questi 3 o si tratta di uno aggiuntivo?
+8. Non credo di aver compreso fino in fondo la logica dei `VU meter`: sono 3 i LED che fungono da indicatori di livello? Per quanto riguarda il LED di `TEMPMON` e `PROTECT`, esso è incluso in questi 3 o si tratta di uno aggiuntivo?
+9. Il segnale `TEMPMON` è un segnale continuo (0 - 5V). Come stabiliamo la soglia alla quale il valore è da considerarsi critico?
