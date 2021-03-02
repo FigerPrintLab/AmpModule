@@ -409,7 +409,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 8350 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 9500 1000 0    50   ~ 0
-TODO:\n  - Check volume impedance\n  - Check protection high level voltage\n  - Bypass caps\n  - Decide about RESERVED pins
+TODO:\n  - Check volume impedance\n  - Check PROTECT voltage level\n  - Bypass caps\n  - Decide about RESERVED pins
 Wire Notes Line
 	7400 600  7400 2100
 Wire Notes Line
