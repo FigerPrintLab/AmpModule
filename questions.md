@@ -12,6 +12,8 @@
 8. Qual è la logica dei `VU meter`: sono 3 i LED che fungono da indicatori di livello? Per quanto riguarda il LED di `TEMPMON` e `PROTECT`, esso è incluso in questi 3 o si tratta di uno aggiuntivo?
 9. Il segnale `TEMPMON` è un segnale continuo (0 - 5V). Come stabiliamo la soglia alla quale il valore è da considerarsi critico?
 10. L'effetto amplificatore del fattore Q del filtro introduce un guadagno nella frequenza di taglio. Il segnale dev'essere inizialmente attenuato per evitare di clippare quando si accende il filtro o è preferibile lasciarlo (virtualmente) a 0dB?
+11. Che cosa ne facciamo dei pin `RESERVED`?
+12. Quali sono le (3) frequenze di taglio del filtro?
 
 ---
 

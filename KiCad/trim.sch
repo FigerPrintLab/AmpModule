@@ -227,12 +227,12 @@ $EndComp
 $Comp
 L Device:Opamp_Dual_Generic U?
 U 3 1 60459ACB
-P 1600 6400
-F 0 "U?" H 1558 6446 50  0000 L CNN
-F 1 "Opamp_Dual_Generic" H 1558 6355 50  0000 L CNN
-F 2 "" H 1600 6400 50  0001 C CNN
-F 3 "~" H 1600 6400 50  0001 C CNN
-	3    1600 6400
+P 5900 5400
+F 0 "U?" H 5858 5446 50  0000 L CNN
+F 1 "Opamp_Dual_Generic" H 5858 5355 50  0000 L CNN
+F 2 "" H 5900 5400 50  0001 C CNN
+F 3 "~" H 5900 5400 50  0001 C CNN
+	3    5900 5400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
