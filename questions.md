@@ -52,3 +52,7 @@ Usiamo un unico LED RGB per il `VOUT_MON` e cerchiamo di includere nel rosso il 
 ### 9. Il segnale `TEMPMON` è un segnale continuo (0 - 5V). Come stabiliamo la soglia alla quale il valore è da considerarsi critico?
 
 Se lo includiamo usiamo un LED a parte da gestire attraverso apposite soglie ancora da definire.
+
+### 10. L'effetto amplificatore del fattore Q del filtro introduce un guadagno nella frequenza di taglio. Il segnale dev'essere inizialmente attenuato per evitare di clippare quando si accende il filtro o è preferibile lasciarlo (virtualmente) a 0dB?
+
+Premettendo che il Q è fisso a 3, la banda passante deve stare a 0dB. Il guadagno in prossimità di Fc rimane chiaramente superiore a 0dB ma non lo dobbiamo compensare in nessuna maniera.
