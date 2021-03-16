@@ -1212,7 +1212,7 @@ $EndComp
 Text Notes 7000 6950 0    50   ~ 0
 TODO:\n  - Check volume impedance\n  - Check protection high level voltage\n  - Bypass caps\n  - Decide about RESERVED pins
 $Comp
-L Comparator:LM393 U4
+L Amp-Module-rescue:LM393-Comparator U4
 U 3 1 5FDE7BC8
 P 8150 4100
 F 0 "U4" V 7850 4100 50  0000 C CNN
@@ -1225,7 +1225,7 @@ $EndComp
 Text GLabel 8650 4700 2    50   Input ~ 0
 +5VDC
 $Comp
-L Comparator:LM393 U7
+L Amp-Module-rescue:LM393-Comparator U7
 U 1 1 5FEF8A92
 P 10350 3800
 F 0 "U7" H 10350 4000 50  0000 C CNN
@@ -1236,7 +1236,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 10350 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM393 U7
+L Amp-Module-rescue:LM393-Comparator U7
 U 2 1 5FEF8A98
 P 10350 4300
 F 0 "U7" H 10350 4500 50  0000 C CNN
@@ -1247,7 +1247,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 10350 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM393 U8
+L Amp-Module-rescue:LM393-Comparator U8
 U 2 1 5FEF8AA4
 P 10350 5300
 F 0 "U8" H 10350 5500 50  0000 C CNN
@@ -1470,7 +1470,7 @@ F 3 "~" H 3350 7350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Comparator:LM393 U5
+L Amp-Module-rescue:LM393-Comparator U5
 U 3 1 5FDFEC1B
 P 8150 4450
 F 0 "U5" V 7850 4450 50  0000 C CNN
@@ -1481,7 +1481,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 8150 4450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Comparator:LM393 U6
+L Amp-Module-rescue:LM393-Comparator U6
 U 3 1 600F6687
 P 8150 4800
 F 0 "U6" V 7850 4800 50  0000 C CNN
@@ -1492,7 +1492,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 8150 4800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Comparator:LM393 U7
+L Amp-Module-rescue:LM393-Comparator U7
 U 3 1 600F668D
 P 8150 5150
 F 0 "U7" V 7850 5150 50  0000 C CNN
@@ -1503,7 +1503,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 8150 5150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Comparator:LM393 U8
+L Amp-Module-rescue:LM393-Comparator U8
 U 3 1 60107B6A
 P 8150 5500
 F 0 "U8" V 7850 5500 50  0000 C CNN
@@ -1615,7 +1615,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/cd4052b.pdf" H 8530 1750 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM393 U8
+L Amp-Module-rescue:LM393-Comparator U8
 U 1 1 5FEF8A9E
 P 10350 4800
 F 0 "U8" H 10350 5000 50  0000 C CNN
@@ -1654,7 +1654,7 @@ Connection ~ 9900 5200
 Wire Wire Line
 	9900 5200 9900 5250
 $Comp
-L Comparator:LM393 U5
+L Amp-Module-rescue:LM393-Comparator U5
 U 1 1 603C66AF
 P 10350 1250
 F 0 "U5" H 10350 1450 50  0000 C CNN
@@ -1665,7 +1665,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 10350 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM393 U5
+L Amp-Module-rescue:LM393-Comparator U5
 U 2 1 603C66B5
 P 10350 1750
 F 0 "U5" H 10350 1950 50  0000 C CNN
@@ -1676,7 +1676,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 10350 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM393 U6
+L Amp-Module-rescue:LM393-Comparator U6
 U 2 1 603C66BB
 P 10350 2750
 F 0 "U6" H 10350 2950 50  0000 C CNN
@@ -1833,7 +1833,7 @@ Connection ~ 11000 1250
 Wire Wire Line
 	11000 1250 11000 1750
 $Comp
-L Comparator:LM393 U6
+L Amp-Module-rescue:LM393-Comparator U6
 U 1 1 603C6712
 P 10350 2250
 F 0 "U6" H 10350 2450 50  0000 C CNN
@@ -1947,7 +1947,7 @@ LM_VOUT1MON
 Text GLabel 8300 2700 0    50   Input ~ 0
 LM_VOUT3MON
 $Comp
-L Comparator:LM393 U4
+L Amp-Module-rescue:LM393-Comparator U4
 U 1 1 6001BFF8
 P 8600 2800
 F 0 "U4" H 8600 3000 50  0000 C CNN
@@ -1958,7 +1958,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 8600 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM393 U4
+L Amp-Module-rescue:LM393-Comparator U4
 U 2 1 6001CB31
 P 8600 3450
 F 0 "U4" H 8600 3650 50  0000 C CNN

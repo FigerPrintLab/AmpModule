@@ -91,7 +91,7 @@ DSP_IOUT2MON
 Text GLabel 5800 4300 0    50   Input ~ 0
 DSP_IOUT1MON
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 1 1 605BE17A
 P 4500 3200
 AR Path="/605BE17A" Ref="U?"  Part="1" 
@@ -104,7 +104,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 4500 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 2 1 605BE180
 P 4500 3700
 AR Path="/605BE180" Ref="U?"  Part="2" 
@@ -117,7 +117,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 4500 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 1 1 605BE202
 P 4500 4200
 AR Path="/605BE202" Ref="U?"  Part="1" 
@@ -140,7 +140,7 @@ LM_TEMPMON12
 Text GLabel 4200 4100 0    50   Input ~ 0
 LM_TEMPMON34
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 3 1 605C6880
 P 8700 3200
 AR Path="/605C6880" Ref="U?"  Part="3" 
@@ -155,7 +155,7 @@ $EndComp
 Text GLabel 9100 3100 2    50   Input ~ 0
 +5VDC
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 3 1 605C6887
 P 8700 3550
 AR Path="/605C6887" Ref="U?"  Part="3" 
@@ -199,7 +199,7 @@ Wire Wire Line
 	8350 3500 8350 3450
 Connection ~ 8350 3450
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 2 1 605C6F47
 P 4500 4700
 AR Path="/605C6F47" Ref="U?"  Part="2" 
