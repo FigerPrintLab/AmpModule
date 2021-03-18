@@ -14,9 +14,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 3 1 60442CB7
 P 8200 4050
+AR Path="/60442CB7" Ref="U?"  Part="3" 
+AR Path="/603D6377/60442CB7" Ref="U?"  Part="3" 
 F 0 "U?" V 7900 4050 50  0000 C CNN
 F 1 "LM393" V 8000 4050 50  0000 C CNN
 F 2 "" H 8200 4050 50  0001 C CNN
@@ -27,9 +29,11 @@ $EndComp
 Text GLabel 8700 4650 2    50   Input ~ 0
 +5VDC
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 1 1 60442CBE
 P 10400 3750
+AR Path="/60442CBE" Ref="U?"  Part="1" 
+AR Path="/603D6377/60442CBE" Ref="U?"  Part="1" 
 F 0 "U?" H 10400 3950 50  0000 C CNN
 F 1 "LM393" H 10400 3750 50  0000 C CNN
 F 2 "" H 10400 3750 50  0001 C CNN
@@ -38,9 +42,11 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 10400 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 2 1 60442CC4
 P 10400 4250
+AR Path="/60442CC4" Ref="U?"  Part="2" 
+AR Path="/603D6377/60442CC4" Ref="U?"  Part="2" 
 F 0 "U?" H 10400 4450 50  0000 C CNN
 F 1 "LM393" H 10400 4250 50  0000 C CNN
 F 2 "" H 10400 4250 50  0001 C CNN
@@ -49,9 +55,11 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 10400 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 2 1 60442CCA
 P 10400 5250
+AR Path="/60442CCA" Ref="U?"  Part="2" 
+AR Path="/603D6377/60442CCA" Ref="U?"  Part="2" 
 F 0 "U?" H 10400 5450 50  0000 C CNN
 F 1 "LM393" H 10400 5250 50  0000 C CNN
 F 2 "" H 10400 5250 50  0001 C CNN
@@ -212,9 +220,11 @@ Wire Notes Line
 Text Notes 7450 650  0    50   ~ 0
 VOUT MONITOR
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 3 1 60442D23
 P 8200 4400
+AR Path="/60442D23" Ref="U?"  Part="3" 
+AR Path="/603D6377/60442D23" Ref="U?"  Part="3" 
 F 0 "U?" V 7900 4400 50  0000 C CNN
 F 1 "LM393" V 8000 4400 50  0000 C CNN
 F 2 "" H 8200 4400 50  0001 C CNN
@@ -223,9 +233,11 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 8200 4400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 3 1 60442D29
 P 8200 4750
+AR Path="/60442D29" Ref="U?"  Part="3" 
+AR Path="/603D6377/60442D29" Ref="U?"  Part="3" 
 F 0 "U?" V 7900 4750 50  0000 C CNN
 F 1 "LM393" V 8000 4750 50  0000 C CNN
 F 2 "" H 8200 4750 50  0001 C CNN
@@ -234,9 +246,11 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 8200 4750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 3 1 60442D2F
 P 8200 5100
+AR Path="/60442D2F" Ref="U?"  Part="3" 
+AR Path="/603D6377/60442D2F" Ref="U?"  Part="3" 
 F 0 "U?" V 7900 5100 50  0000 C CNN
 F 1 "LM393" V 8000 5100 50  0000 C CNN
 F 2 "" H 8200 5100 50  0001 C CNN
@@ -245,9 +259,11 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 8200 5100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 3 1 60442D35
 P 8200 5450
+AR Path="/60442D35" Ref="U?"  Part="3" 
+AR Path="/603D6377/60442D35" Ref="U?"  Part="3" 
 F 0 "U?" V 7900 5450 50  0000 C CNN
 F 1 "LM393" V 8000 5450 50  0000 C CNN
 F 2 "" H 8200 5450 50  0001 C CNN
@@ -357,9 +373,11 @@ F 3 "http://www.ti.com/lit/ds/symlink/cd4052b.pdf" H 8580 1700 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 1 1 60442D72
 P 10400 4750
+AR Path="/60442D72" Ref="U?"  Part="1" 
+AR Path="/603D6377/60442D72" Ref="U?"  Part="1" 
 F 0 "U?" H 10400 4950 50  0000 C CNN
 F 1 "LM393" H 10400 4750 50  0000 C CNN
 F 2 "" H 10400 4750 50  0001 C CNN
@@ -396,9 +414,11 @@ Connection ~ 9950 5150
 Wire Wire Line
 	9950 5150 9950 5200
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 1 1 60442D88
 P 10400 1200
+AR Path="/60442D88" Ref="U?"  Part="1" 
+AR Path="/603D6377/60442D88" Ref="U?"  Part="1" 
 F 0 "U?" H 10400 1400 50  0000 C CNN
 F 1 "LM393" H 10400 1200 50  0000 C CNN
 F 2 "" H 10400 1200 50  0001 C CNN
@@ -407,9 +427,11 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 10400 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 2 1 60442D8E
 P 10400 1700
+AR Path="/60442D8E" Ref="U?"  Part="2" 
+AR Path="/603D6377/60442D8E" Ref="U?"  Part="2" 
 F 0 "U?" H 10400 1900 50  0000 C CNN
 F 1 "LM393" H 10400 1700 50  0000 C CNN
 F 2 "" H 10400 1700 50  0001 C CNN
@@ -418,9 +440,11 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 10400 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 2 1 60442D94
 P 10400 2700
+AR Path="/60442D94" Ref="U?"  Part="2" 
+AR Path="/603D6377/60442D94" Ref="U?"  Part="2" 
 F 0 "U?" H 10400 2900 50  0000 C CNN
 F 1 "LM393" H 10400 2700 50  0000 C CNN
 F 2 "" H 10400 2700 50  0001 C CNN
@@ -575,9 +599,11 @@ Connection ~ 11050 1200
 Wire Wire Line
 	11050 1200 11050 1700
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 1 1 60442DEA
 P 10400 2200
+AR Path="/60442DEA" Ref="U?"  Part="1" 
+AR Path="/603D6377/60442DEA" Ref="U?"  Part="1" 
 F 0 "U?" H 10400 2400 50  0000 C CNN
 F 1 "LM393" H 10400 2200 50  0000 C CNN
 F 2 "" H 10400 2200 50  0001 C CNN
@@ -689,9 +715,11 @@ LM_VOUT1MON
 Text GLabel 8350 2650 0    50   Input ~ 0
 LM_VOUT3MON
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 1 1 60442E29
 P 8650 2750
+AR Path="/60442E29" Ref="U?"  Part="1" 
+AR Path="/603D6377/60442E29" Ref="U?"  Part="1" 
 F 0 "U?" H 8650 2950 50  0000 C CNN
 F 1 "LM393" H 8650 2750 50  0000 C CNN
 F 2 "" H 8650 2750 50  0001 C CNN
@@ -700,9 +728,11 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 8650 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM393 U?
+L Amp-Module-rescue:LM393-Comparator U?
 U 2 1 60442E2F
 P 8650 3400
+AR Path="/60442E2F" Ref="U?"  Part="2" 
+AR Path="/603D6377/60442E2F" Ref="U?"  Part="2" 
 F 0 "U?" H 8650 3600 50  0000 C CNN
 F 1 "LM393" H 8650 3400 50  0000 C CNN
 F 2 "" H 8650 3400 50  0001 C CNN

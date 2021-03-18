@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title "AmpModule front panel (2way)"
 Date "2021-02-28"
 Rev "v0.1"
@@ -374,110 +374,230 @@ F 3 "~" H 1650 1750 50  0001 C CNN
 	1    1650 1750
 	1    0    0    -1  
 $EndComp
-Text GLabel 8650 1700 2    50   Input ~ 0
-DSP_READY24
-Text GLabel 8050 1600 0    50   Input ~ 0
-LM_READY2
-Text GLabel 8050 1800 0    50   Input ~ 0
-LM_READY4
-Text GLabel 8650 1100 2    50   Input ~ 0
-DSP_READY13
-Text GLabel 8050 1200 0    50   Input ~ 0
-LM_READY3
-Text GLabel 8050 1000 0    50   Input ~ 0
-LM_READY1
-$Comp
-L 74xx:74LS08 U1
-U 4 1 5FDE25E4
-P 8350 1700
-F 0 "U1" H 8350 2025 50  0000 C CNN
-F 1 "74LS08" H 8350 1934 50  0000 C CNN
-F 2 "" H 8350 1700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 8350 1700 50  0001 C CNN
-	4    8350 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS08 U1
-U 3 1 5FDDFE94
-P 8350 1100
-F 0 "U1" H 8350 1425 50  0000 C CNN
-F 1 "74LS08" H 8350 1334 50  0000 C CNN
-F 2 "" H 8350 1100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 8350 1100 50  0001 C CNN
-	3    8350 1100
-	1    0    0    -1  
-$EndComp
-Text Notes 9500 1000 0    50   ~ 0
-TODO:\n  - Check volume impedance\n  - Check PROTECT voltage level\n  - Bypass caps\n  - Decide about RESERVED pins
-Wire Notes Line
-	7400 600  7400 2100
-Wire Notes Line
-	7400 2100 9400 2100
-Wire Notes Line
-	9400 2100 9400 600 
-Wire Notes Line
-	9400 600  7400 600 
-Text Notes 7400 700  0    50   ~ 0
-READY
-Wire Notes Line
-	7400 700  7650 700 
-Wire Notes Line
-	7650 700  7650 600 
+Text Notes 9500 950  0    50   ~ 0
+TODO:\n  - Check PROTECT voltage level\n  - Bypass caps\n  - VU meter
 $Sheet
-S 4650 4250 600  450 
-U 603C98A4
-F0 "filter" 50
-F1 "filter.sch" 50
-$EndSheet
-$Sheet
-S 5450 4250 600  450 
-U 60411D03
-F0 "trim" 50
-F1 "trim.sch" 50
-$EndSheet
-$Sheet
-S 4650 5000 600  450 
-U 603D6377
-F0 "VU_Meter" 50
-F1 "VU_Meter.sch" 50
-$EndSheet
-$Sheet
-S 5450 5000 600  450 
+S 7400 700  600  450 
 U 604C8E92
 F0 "control" 50
 F1 "control.sch" 50
 $EndSheet
+Text GLabel 1250 3550 0    50   Input ~ 0
+DSP_OUT1+
+Text GLabel 1250 4350 0    50   Input ~ 0
+DSP_OUT2+
 $Comp
-L 74xx:74LS08 U?
-U 3 1 604F98D5
-P 7950 2550
-AR Path="/60551B46/604F98D5" Ref="U?"  Part="3" 
-AR Path="/604F98D5" Ref="U?"  Part="3" 
-F 0 "U?" H 7950 2875 50  0000 C CNN
-F 1 "74LS08" H 7950 2784 50  0000 C CNN
-F 2 "" H 7950 2550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 7950 2550 50  0001 C CNN
-	3    7950 2550
-	1    0    0    -1  
+L Device:Opamp_Dual_Generic U?
+U 1 1 605476D1
+P 5700 3700
+F 0 "U?" H 5700 3333 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 5700 3450 50  0000 C CNN
+F 2 "" H 5700 3700 50  0001 C CNN
+F 3 "~" H 5700 3700 50  0001 C CNN
+	1    5700 3700
+	1    0    0    1   
 $EndComp
 $Comp
-L 74xx:74LS08 U?
-U 4 1 604F98DB
-P 8900 2550
-AR Path="/60551B46/604F98DB" Ref="U?"  Part="4" 
-AR Path="/604F98DB" Ref="U?"  Part="4" 
-F 0 "U?" H 8900 2875 50  0000 C CNN
-F 1 "74LS08" H 8900 2784 50  0000 C CNN
-F 2 "" H 8900 2550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 8900 2550 50  0001 C CNN
-	4    8900 2550
+L Device:Opamp_Dual_Generic U?
+U 2 1 605480DC
+P 5700 4200
+F 0 "U?" H 5700 3950 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 5700 3850 50  0000 C CNN
+F 2 "" H 5700 4200 50  0001 C CNN
+F 3 "~" H 5700 4200 50  0001 C CNN
+	2    5700 4200
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7650 2450
-NoConn ~ 7650 2650
-NoConn ~ 8250 2550
-NoConn ~ 8600 2450
-NoConn ~ 8600 2650
-NoConn ~ 9200 2550
+Wire Wire Line
+	5400 3800 5000 3800
+Wire Wire Line
+	5000 4100 5400 4100
+Wire Wire Line
+	5400 4300 5250 4300
+Wire Wire Line
+	5250 4300 5250 4500
+Wire Wire Line
+	5250 4500 6100 4500
+Wire Wire Line
+	6100 4500 6100 4200
+Wire Wire Line
+	6100 4200 6000 4200
+Wire Wire Line
+	5400 3600 5250 3600
+Wire Wire Line
+	5250 3600 5250 3400
+Wire Wire Line
+	5250 3400 6100 3400
+Wire Wire Line
+	6100 3400 6100 3700
+Wire Wire Line
+	6100 3700 6000 3700
+$Comp
+L Device:Opamp_Dual_Generic U?
+U 3 1 6054DF90
+P 4450 4750
+F 0 "U?" V 4125 4750 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" V 4216 4750 50  0000 C CNN
+F 2 "" H 4450 4750 50  0001 C CNN
+F 3 "~" H 4450 4750 50  0001 C CNN
+	3    4450 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 3700 6200 3700
+Connection ~ 6100 3700
+Wire Wire Line
+	6100 4200 6200 4200
+Connection ~ 6100 4200
+Text GLabel 6200 3850 2    50   Input ~ 0
+LM_IN3+
+Text GLabel 6200 3700 2    50   Input ~ 0
+LM_IN1+
+Wire Wire Line
+	6100 3850 6100 3700
+Wire Wire Line
+	6100 3850 6200 3850
+Text GLabel 6200 4200 2    50   Input ~ 0
+LM_IN2+
+Text GLabel 6200 4050 2    50   Input ~ 0
+LM_IN4+
+Wire Wire Line
+	6200 4050 6100 4050
+Wire Wire Line
+	6100 4050 6100 4200
+$Sheet
+S 1500 3650 900  600 
+U 603C98A4
+F0 "filter" 50
+F1 "filter.sch" 50
+F2 "OUT1" I R 2400 3800 50 
+F3 "IN1" I L 1500 3800 50 
+F4 "IN2" I L 1500 4100 50 
+F5 "OUT2" I R 2400 4100 50 
+$EndSheet
+$Sheet
+S 3850 3650 1150 600 
+U 60411D03
+F0 "trim" 50
+F1 "trim.sch" 50
+F2 "IN1" I L 3850 3800 50 
+F3 "OUT1" I R 5000 3800 50 
+F4 "IN2" I L 3850 4100 50 
+F5 "OUT2" I R 5000 4100 50 
+$EndSheet
+Wire Wire Line
+	3700 4500 3700 4750
+Text Notes 3250 4250 2    50   ~ 0
+S2=1
+Text Notes 3250 4150 2    50   ~ 0
+S2=0
+Text Notes 3250 3950 2    50   ~ 0
+S1=1
+Text Notes 3250 3850 2    50   ~ 0
+S1=0
+Wire Wire Line
+	3700 4750 3250 4750
+Wire Wire Line
+	3650 4500 3700 4500
+Wire Wire Line
+	3250 4750 3250 4700
+Connection ~ 3250 4750
+Wire Wire Line
+	3150 4750 3150 4700
+Wire Wire Line
+	3250 4750 3150 4750
+Wire Wire Line
+	3250 4800 3250 4750
+$Comp
+L Analog_Switch:CD4053B U?
+U 1 1 6058FCFC
+P 3150 4000
+AR Path="/603D6377/6058FCFC" Ref="U?"  Part="1" 
+AR Path="/6058FCFC" Ref="U?"  Part="1" 
+F 0 "U?" H 2950 4750 50  0000 C CNN
+F 1 "CD4053B" H 2950 4650 50  0000 C CNN
+F 2 "" H 3300 3250 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4052b.pdf" H 3130 4200 50  0001 C CNN
+	1    3150 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6058FD07
+P 3250 4800
+AR Path="/603D6377/6058FD07" Ref="#PWR?"  Part="1" 
+AR Path="/6058FD07" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3250 4550 50  0001 C CNN
+F 1 "GND" H 3100 4700 50  0000 C CNN
+F 2 "" H 3250 4800 50  0001 C CNN
+F 3 "" H 3250 4800 50  0001 C CNN
+	1    3250 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3800 3850 3800
+Wire Wire Line
+	3650 4100 3850 4100
+$Sheet
+S 3850 3100 500  200 
+U 605C72FC
+F0 "bypassFilter1" 50
+F1 "latch.sch" 50
+F2 "OUT" I L 3850 3200 50 
+$EndSheet
+$Sheet
+S 4500 3350 500  200 
+U 605ED2C3
+F0 "bypassFilter2" 50
+F1 "latch.sch" 50
+F2 "OUT" I L 4500 3450 50 
+$EndSheet
+Wire Wire Line
+	4500 3450 3750 3450
+Wire Wire Line
+	3750 3450 3750 3600
+Wire Wire Line
+	3750 3600 3650 3600
+Wire Wire Line
+	3850 3200 3700 3200
+Wire Wire Line
+	3700 3200 3700 3500
+Wire Wire Line
+	3700 3500 3650 3500
+Wire Wire Line
+	2400 3800 2650 3800
+Wire Wire Line
+	1250 3550 1400 3550
+Wire Wire Line
+	2550 3550 2550 3900
+Wire Wire Line
+	2550 3900 2650 3900
+Wire Wire Line
+	2400 4100 2650 4100
+Wire Wire Line
+	1250 4350 1400 4350
+Wire Wire Line
+	2550 4350 2550 4200
+Wire Wire Line
+	2550 4200 2650 4200
+Wire Wire Line
+	1500 4100 1400 4100
+Wire Wire Line
+	1400 4100 1400 4350
+Connection ~ 1400 4350
+Wire Wire Line
+	1400 4350 2550 4350
+Wire Wire Line
+	1400 3550 1400 3800
+Wire Wire Line
+	1400 3800 1500 3800
+Connection ~ 1400 3550
+Wire Wire Line
+	1400 3550 2550 3550
+Text GLabel 3000 3250 0    50   Input ~ 0
++12VDC
+Wire Wire Line
+	3000 3250 3050 3250
+Wire Wire Line
+	3050 3250 3050 3300
 $EndSCHEMATC
