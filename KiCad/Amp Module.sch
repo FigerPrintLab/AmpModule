@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 8
 Title "AmpModule front panel (2way)"
 Date "2021-02-28"
 Rev "v0.1"
@@ -374,230 +374,357 @@ F 3 "~" H 1650 1750 50  0001 C CNN
 	1    1650 1750
 	1    0    0    -1  
 $EndComp
-Text Notes 9500 950  0    50   ~ 0
+Text Notes 7350 950  0    50   ~ 0
 TODO:\n  - Check PROTECT voltage level\n  - Bypass caps\n  - VU meter
 $Sheet
-S 7400 700  600  450 
+S 750  5700 2300 1750
 U 604C8E92
 F0 "control" 50
 F1 "control.sch" 50
 $EndSheet
-Text GLabel 1250 3550 0    50   Input ~ 0
+Text GLabel 1300 3550 0    50   Input ~ 0
 DSP_OUT1+
-Text GLabel 1250 4350 0    50   Input ~ 0
+Text GLabel 1300 4350 0    50   Input ~ 0
 DSP_OUT2+
 $Comp
 L Device:Opamp_Dual_Generic U?
 U 1 1 605476D1
-P 5700 3700
-F 0 "U?" H 5700 3333 50  0000 C CNN
-F 1 "Opamp_Dual_Generic" H 5700 3450 50  0000 C CNN
-F 2 "" H 5700 3700 50  0001 C CNN
-F 3 "~" H 5700 3700 50  0001 C CNN
-	1    5700 3700
+P 5200 3700
+F 0 "U?" H 5200 3333 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 5200 3450 50  0000 C CNN
+F 2 "" H 5200 3700 50  0001 C CNN
+F 3 "~" H 5200 3700 50  0001 C CNN
+	1    5200 3700
 	1    0    0    1   
 $EndComp
 $Comp
 L Device:Opamp_Dual_Generic U?
 U 2 1 605480DC
-P 5700 4200
-F 0 "U?" H 5700 3950 50  0000 C CNN
-F 1 "Opamp_Dual_Generic" H 5700 3850 50  0000 C CNN
-F 2 "" H 5700 4200 50  0001 C CNN
-F 3 "~" H 5700 4200 50  0001 C CNN
-	2    5700 4200
+P 5200 4200
+F 0 "U?" H 5200 3950 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 5200 3850 50  0000 C CNN
+F 2 "" H 5200 4200 50  0001 C CNN
+F 3 "~" H 5200 4200 50  0001 C CNN
+	2    5200 4200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 3800 5000 3800
+	4900 4300 4750 4300
 Wire Wire Line
-	5000 4100 5400 4100
+	4750 4300 4750 4500
 Wire Wire Line
-	5400 4300 5250 4300
+	4750 4500 5600 4500
 Wire Wire Line
-	5250 4300 5250 4500
+	5600 4500 5600 4200
 Wire Wire Line
-	5250 4500 6100 4500
+	5600 4200 5500 4200
 Wire Wire Line
-	6100 4500 6100 4200
+	4900 3600 4750 3600
 Wire Wire Line
-	6100 4200 6000 4200
+	4750 3600 4750 3400
 Wire Wire Line
-	5400 3600 5250 3600
+	4750 3400 5600 3400
 Wire Wire Line
-	5250 3600 5250 3400
+	5600 3400 5600 3700
 Wire Wire Line
-	5250 3400 6100 3400
-Wire Wire Line
-	6100 3400 6100 3700
-Wire Wire Line
-	6100 3700 6000 3700
+	5600 3700 5500 3700
 $Comp
 L Device:Opamp_Dual_Generic U?
 U 3 1 6054DF90
-P 4450 4750
-F 0 "U?" V 4125 4750 50  0000 C CNN
-F 1 "Opamp_Dual_Generic" V 4216 4750 50  0000 C CNN
-F 2 "" H 4450 4750 50  0001 C CNN
-F 3 "~" H 4450 4750 50  0001 C CNN
-	3    4450 4750
+P 9850 1350
+F 0 "U?" V 9525 1350 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" V 9616 1350 50  0000 C CNN
+F 2 "" H 9850 1350 50  0001 C CNN
+F 3 "~" H 9850 1350 50  0001 C CNN
+	3    9850 1350
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6100 3700 6200 3700
-Connection ~ 6100 3700
+	5600 3700 5700 3700
+Connection ~ 5600 3700
 Wire Wire Line
-	6100 4200 6200 4200
-Connection ~ 6100 4200
-Text GLabel 6200 3850 2    50   Input ~ 0
+	5600 4200 5700 4200
+Connection ~ 5600 4200
+Text GLabel 5700 3850 2    50   Input ~ 0
 LM_IN3+
-Text GLabel 6200 3700 2    50   Input ~ 0
+Text GLabel 5700 3700 2    50   Input ~ 0
 LM_IN1+
 Wire Wire Line
-	6100 3850 6100 3700
+	5600 3850 5600 3700
 Wire Wire Line
-	6100 3850 6200 3850
-Text GLabel 6200 4200 2    50   Input ~ 0
+	5600 3850 5700 3850
+Text GLabel 5700 4200 2    50   Input ~ 0
 LM_IN2+
-Text GLabel 6200 4050 2    50   Input ~ 0
+Text GLabel 5700 4050 2    50   Input ~ 0
 LM_IN4+
 Wire Wire Line
-	6200 4050 6100 4050
+	5700 4050 5600 4050
 Wire Wire Line
-	6100 4050 6100 4200
+	5600 4050 5600 4200
 $Sheet
-S 1500 3650 900  600 
-U 603C98A4
-F0 "filter" 50
-F1 "filter.sch" 50
-F2 "OUT1" I R 2400 3800 50 
-F3 "IN1" I L 1500 3800 50 
-F4 "IN2" I L 1500 4100 50 
-F5 "OUT2" I R 2400 4100 50 
-$EndSheet
-$Sheet
-S 3850 3650 1150 600 
+S 3700 3500 900  900 
 U 60411D03
 F0 "trim" 50
 F1 "trim.sch" 50
-F2 "IN1" I L 3850 3800 50 
-F3 "OUT1" I R 5000 3800 50 
-F4 "IN2" I L 3850 4100 50 
-F5 "OUT2" I R 5000 4100 50 
+F2 "IN1" I L 3700 3650 50 
+F3 "OUT1" I R 4600 3800 50 
+F4 "IN2" I L 3700 4250 50 
+F5 "OUT2" I R 4600 4100 50 
 $EndSheet
-Wire Wire Line
-	3700 4500 3700 4750
-Text Notes 3250 4250 2    50   ~ 0
-S2=1
-Text Notes 3250 4150 2    50   ~ 0
-S2=0
-Text Notes 3250 3950 2    50   ~ 0
-S1=1
-Text Notes 3250 3850 2    50   ~ 0
-S1=0
-Wire Wire Line
-	3700 4750 3250 4750
-Wire Wire Line
-	3650 4500 3700 4500
-Wire Wire Line
-	3250 4750 3250 4700
-Connection ~ 3250 4750
-Wire Wire Line
-	3150 4750 3150 4700
-Wire Wire Line
-	3250 4750 3150 4750
-Wire Wire Line
-	3250 4800 3250 4750
-$Comp
-L Analog_Switch:CD4053B U?
-U 1 1 6058FCFC
-P 3150 4000
-AR Path="/603D6377/6058FCFC" Ref="U?"  Part="1" 
-AR Path="/6058FCFC" Ref="U?"  Part="1" 
-F 0 "U?" H 2950 4750 50  0000 C CNN
-F 1 "CD4053B" H 2950 4650 50  0000 C CNN
-F 2 "" H 3300 3250 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/cd4052b.pdf" H 3130 4200 50  0001 C CNN
-	1    3150 4000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6058FD07
-P 3250 4800
-AR Path="/603D6377/6058FD07" Ref="#PWR?"  Part="1" 
-AR Path="/6058FD07" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3250 4550 50  0001 C CNN
-F 1 "GND" H 3100 4700 50  0000 C CNN
-F 2 "" H 3250 4800 50  0001 C CNN
-F 3 "" H 3250 4800 50  0001 C CNN
-	1    3250 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 3800 3850 3800
-Wire Wire Line
-	3650 4100 3850 4100
 $Sheet
-S 3850 3100 500  200 
+S 2400 3150 500  200 
 U 605C72FC
 F0 "bypassFilter1" 50
 F1 "latch.sch" 50
-F2 "OUT" I L 3850 3200 50 
+F2 "OUT" I R 2900 3250 50 
 $EndSheet
 $Sheet
-S 4500 3350 500  200 
+S 2400 4550 500  200 
 U 605ED2C3
 F0 "bypassFilter2" 50
 F1 "latch.sch" 50
-F2 "OUT" I L 4500 3450 50 
+F2 "OUT" I R 2900 4650 50 
 $EndSheet
 Wire Wire Line
-	4500 3450 3750 3450
+	2000 4100 1900 4100
 Wire Wire Line
-	3750 3450 3750 3600
+	1900 4100 1900 4350
+Connection ~ 1900 4350
 Wire Wire Line
-	3750 3600 3650 3600
+	1900 4350 3000 4350
 Wire Wire Line
-	3850 3200 3700 3200
+	1900 3550 1900 3800
 Wire Wire Line
-	3700 3200 3700 3500
+	1900 3800 2000 3800
+Connection ~ 1900 3550
 Wire Wire Line
-	3700 3500 3650 3500
-Wire Wire Line
-	2400 3800 2650 3800
-Wire Wire Line
-	1250 3550 1400 3550
-Wire Wire Line
-	2550 3550 2550 3900
-Wire Wire Line
-	2550 3900 2650 3900
-Wire Wire Line
-	2400 4100 2650 4100
-Wire Wire Line
-	1250 4350 1400 4350
-Wire Wire Line
-	2550 4350 2550 4200
-Wire Wire Line
-	2550 4200 2650 4200
-Wire Wire Line
-	1500 4100 1400 4100
-Wire Wire Line
-	1400 4100 1400 4350
-Connection ~ 1400 4350
-Wire Wire Line
-	1400 4350 2550 4350
-Wire Wire Line
-	1400 3550 1400 3800
-Wire Wire Line
-	1400 3800 1500 3800
-Connection ~ 1400 3550
-Wire Wire Line
-	1400 3550 2550 3550
-Text GLabel 3000 3250 0    50   Input ~ 0
+	1900 3550 3000 3550
+Text GLabel 10550 1150 2    50   Input ~ 0
 +12VDC
 Wire Wire Line
-	3000 3250 3050 3250
+	10550 1150 10450 1150
 Wire Wire Line
-	3050 3250 3050 3300
+	10450 1150 10450 1250
+$Comp
+L Device:R_Small R?
+U 1 1 60573E26
+P 1500 3550
+AR Path="/603C98A4/60573E26" Ref="R?"  Part="1" 
+AR Path="/60573E26" Ref="R?"  Part="1" 
+F 0 "R?" V 1304 3550 50  0000 C CNN
+F 1 "2.2k" V 1395 3550 50  0000 C CNN
+F 2 "" H 1500 3550 50  0001 C CNN
+F 3 "~" H 1500 3550 50  0001 C CNN
+	1    1500 3550
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1400 3550 1300 3550
+Wire Wire Line
+	1600 3550 1700 3550
+$Comp
+L Device:R_Small R?
+U 1 1 60573E2E
+P 1700 3750
+AR Path="/603C98A4/60573E2E" Ref="R?"  Part="1" 
+AR Path="/60573E2E" Ref="R?"  Part="1" 
+F 0 "R?" H 1641 3796 50  0000 R CNN
+F 1 "1k" H 1641 3705 50  0000 R CNN
+F 2 "" H 1700 3750 50  0001 C CNN
+F 3 "~" H 1700 3750 50  0001 C CNN
+	1    1700 3750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3650 1700 3550
+Connection ~ 1700 3550
+$Comp
+L power:GND #PWR?
+U 1 1 60573E36
+P 1600 3950
+AR Path="/603C98A4/60573E36" Ref="#PWR?"  Part="1" 
+AR Path="/60573E36" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1600 3700 50  0001 C CNN
+F 1 "GND" V 1605 3822 50  0000 R CNN
+F 2 "" H 1600 3950 50  0001 C CNN
+F 3 "" H 1600 3950 50  0001 C CNN
+	1    1600 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 3550 1900 3550
+$Comp
+L Device:R_Small R?
+U 1 1 6057DD4D
+P 1500 4350
+AR Path="/603C98A4/6057DD4D" Ref="R?"  Part="1" 
+AR Path="/6057DD4D" Ref="R?"  Part="1" 
+F 0 "R?" V 1304 4350 50  0000 C CNN
+F 1 "2.2k" V 1395 4350 50  0000 C CNN
+F 2 "" H 1500 4350 50  0001 C CNN
+F 3 "~" H 1500 4350 50  0001 C CNN
+	1    1500 4350
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1400 4350 1300 4350
+Wire Wire Line
+	1600 4350 1700 4350
+Wire Wire Line
+	1600 3950 1700 3950
+Wire Wire Line
+	1700 3950 1700 3850
+$Comp
+L Device:R_Small R?
+U 1 1 60584605
+P 1700 4150
+AR Path="/603C98A4/60584605" Ref="R?"  Part="1" 
+AR Path="/60584605" Ref="R?"  Part="1" 
+F 0 "R?" H 1641 4196 50  0000 R CNN
+F 1 "1k" H 1641 4105 50  0000 R CNN
+F 2 "" H 1700 4150 50  0001 C CNN
+F 3 "~" H 1700 4150 50  0001 C CNN
+	1    1700 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 4050 1700 3950
+Connection ~ 1700 3950
+Wire Wire Line
+	1700 4250 1700 4350
+Connection ~ 1700 4350
+Wire Wire Line
+	1700 4350 1900 4350
+$Comp
+L Analog_Switch:DG419LDY U?
+U 1 1 605A65A9
+P 3300 3750
+F 0 "U?" H 3200 3400 50  0000 C CNN
+F 1 "DG419" H 3300 3900 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3300 3450 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DG417-DG419.pdf" H 3300 3750 50  0001 C CNN
+	1    3300 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Analog_Switch:DG419LDY U?
+U 1 1 605B8C51
+P 3300 4150
+F 0 "U?" H 3200 3800 50  0000 C CNN
+F 1 "DG419" H 3300 4300 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3300 3850 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DG417-DG419.pdf" H 3300 4150 50  0001 C CNN
+	1    3300 4150
+	-1   0    0    -1  
+$EndComp
+Text Notes 3300 3800 0    50   ~ 0
+0
+Text Notes 3300 3550 0    50   ~ 0
+1
+Text Notes 3300 4200 0    50   ~ 0
+0
+Text Notes 3300 4400 0    50   ~ 0
+1
+Wire Wire Line
+	9550 1250 9150 1250
+Wire Wire Line
+	9150 1250 9150 1900
+Wire Wire Line
+	9150 1900 9350 1900
+Wire Wire Line
+	10350 1800 10450 1800
+Wire Wire Line
+	10450 1800 10450 1250
+Wire Wire Line
+	10450 1250 10150 1250
+Connection ~ 10450 1250
+$Comp
+L power:GND #PWR?
+U 1 1 605DAC94
+P 9300 2900
+F 0 "#PWR?" H 9300 2650 50  0001 C CNN
+F 1 "GND" H 9305 2727 50  0000 C CNN
+F 2 "" H 9300 2900 50  0001 C CNN
+F 3 "" H 9300 2900 50  0001 C CNN
+	1    9300 2900
+	-1   0    0    -1  
+$EndComp
+Text GLabel 9050 1150 0    50   Input ~ 0
+-12VDC
+Wire Wire Line
+	9050 1150 9150 1150
+Connection ~ 9150 1900
+Wire Wire Line
+	2900 3250 3300 3250
+Wire Wire Line
+	3300 3250 3300 3350
+Wire Wire Line
+	3000 4150 2900 4150
+$Sheet
+S 2000 3650 900  600 
+U 603C98A4
+F0 "filter" 50
+F1 "filter.sch" 50
+F2 "OUT1" I R 2900 3750 50 
+F3 "IN1" I L 2000 3800 50 
+F4 "IN2" I L 2000 4100 50 
+F5 "OUT2" I R 2900 4150 50 
+$EndSheet
+Wire Wire Line
+	2900 3750 3000 3750
+Wire Wire Line
+	2900 4650 3300 4650
+Wire Wire Line
+	3300 4650 3300 4550
+$Comp
+L Analog_Switch:DG419LDY_Maxim U?
+U 2 1 605A7A95
+P 9850 1800
+F 0 "U?" V 9533 1800 50  0000 C CNN
+F 1 "DG419LDY_Maxim" V 9624 1800 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9850 1500 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DG417-DG419.pdf" H 9850 1800 50  0001 C CNN
+	2    9850 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Analog_Switch:DG419LDY_Maxim U?
+U 2 1 6060C14A
+P 9850 2450
+F 0 "U?" V 9533 2450 50  0000 C CNN
+F 1 "DG419LDY_Maxim" V 9624 2450 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9850 2150 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DG417-DG419.pdf" H 9850 2450 50  0001 C CNN
+	2    9850 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 2900 9300 2450
+Wire Wire Line
+	9300 2450 9350 2450
+Wire Wire Line
+	9350 1800 9300 1800
+Wire Wire Line
+	9300 1800 9300 2450
+Connection ~ 9300 2450
+Wire Wire Line
+	9350 2550 9150 2550
+Wire Wire Line
+	9150 2550 9150 1900
+Wire Wire Line
+	10350 2450 10450 2450
+Wire Wire Line
+	10450 2450 10450 1800
+Connection ~ 10450 1800
+Wire Wire Line
+	3700 4250 3600 4250
+Wire Wire Line
+	3700 3650 3600 3650
+Wire Wire Line
+	4900 3800 4600 3800
+Wire Wire Line
+	4600 4100 4900 4100
+Wire Wire Line
+	9150 1250 9150 1150
+Connection ~ 9150 1250
 $EndSCHEMATC

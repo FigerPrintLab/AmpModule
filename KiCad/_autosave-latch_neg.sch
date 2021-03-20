@@ -1,0 +1,325 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 605C8BFA
+P 6500 3400
+AR Path="/605C72FC/605C8BFA" Ref="Q?"  Part="1" 
+AR Path="/605ED2C3/605C8BFA" Ref="Q?"  Part="1" 
+AR Path="/606576F1/605C8BFA" Ref="Q?"  Part="1" 
+F 0 "Q?" H 6691 3446 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 6691 3355 50  0000 L CNN
+F 2 "" H 6700 3500 50  0001 C CNN
+F 3 "~" H 6500 3400 50  0001 C CNN
+	1    6500 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 605CA6A1
+P 4350 4050
+AR Path="/605C72FC/605CA6A1" Ref="R?"  Part="1" 
+AR Path="/605ED2C3/605CA6A1" Ref="R?"  Part="1" 
+AR Path="/606576F1/605CA6A1" Ref="R?"  Part="1" 
+F 0 "R?" H 4409 4096 50  0000 L CNN
+F 1 "10k" H 4409 4005 50  0000 L CNN
+F 2 "" H 4350 4050 50  0001 C CNN
+F 3 "~" H 4350 4050 50  0001 C CNN
+	1    4350 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 605D57B8
+P 4350 5050
+AR Path="/605C72FC/605D57B8" Ref="C?"  Part="1" 
+AR Path="/605ED2C3/605D57B8" Ref="C?"  Part="1" 
+AR Path="/606576F1/605D57B8" Ref="C?"  Part="1" 
+F 0 "C?" H 4442 5096 50  0000 L CNN
+F 1 "470n" H 4442 5005 50  0000 L CNN
+F 2 "" H 4350 5050 50  0001 C CNN
+F 3 "~" H 4350 5050 50  0001 C CNN
+	1    4350 5050
+	1    0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW?
+U 1 1 605D5FB7
+P 5700 4450
+AR Path="/605C72FC/605D5FB7" Ref="SW?"  Part="1" 
+AR Path="/605ED2C3/605D5FB7" Ref="SW?"  Part="1" 
+AR Path="/606576F1/605D5FB7" Ref="SW?"  Part="1" 
+F 0 "SW?" H 5700 4835 50  0000 C CNN
+F 1 "SW_Push_LED" H 5700 4744 50  0000 C CNN
+F 2 "" H 5700 4750 50  0001 C CNN
+F 3 "~" H 5700 4750 50  0001 C CNN
+	1    5700 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3950 4350 3400
+Wire Wire Line
+	4350 3400 4900 3400
+Wire Wire Line
+	4900 3400 4900 3600
+$Comp
+L Device:R_Small R?
+U 1 1 605D8BBC
+P 4350 3050
+AR Path="/605C72FC/605D8BBC" Ref="R?"  Part="1" 
+AR Path="/605ED2C3/605D8BBC" Ref="R?"  Part="1" 
+AR Path="/606576F1/605D8BBC" Ref="R?"  Part="1" 
+F 0 "R?" H 4409 3096 50  0000 L CNN
+F 1 "10k" H 4409 3005 50  0000 L CNN
+F 2 "" H 4350 3050 50  0001 C CNN
+F 3 "~" H 4350 3050 50  0001 C CNN
+	1    4350 3050
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4350 3150 4350 3400
+Connection ~ 4350 3400
+$Comp
+L power:GND #PWR?
+U 1 1 605D9138
+P 4350 5700
+AR Path="/605C72FC/605D9138" Ref="#PWR?"  Part="1" 
+AR Path="/605ED2C3/605D9138" Ref="#PWR?"  Part="1" 
+AR Path="/606576F1/605D9138" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4350 5450 50  0001 C CNN
+F 1 "GND" H 4355 5527 50  0000 C CNN
+F 2 "" H 4350 5700 50  0001 C CNN
+F 3 "" H 4350 5700 50  0001 C CNN
+	1    4350 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4950 4350 4700
+Wire Wire Line
+	4350 4700 5450 4700
+Wire Wire Line
+	4350 4150 4350 4700
+Connection ~ 4350 4700
+$Comp
+L Device:R_Small R?
+U 1 1 605D988B
+P 6050 3800
+AR Path="/605C72FC/605D988B" Ref="R?"  Part="1" 
+AR Path="/605ED2C3/605D988B" Ref="R?"  Part="1" 
+AR Path="/606576F1/605D988B" Ref="R?"  Part="1" 
+F 0 "R?" V 5854 3800 50  0000 C CNN
+F 1 "10k" V 5945 3800 50  0000 C CNN
+F 2 "" H 6050 3800 50  0001 C CNN
+F 3 "~" H 6050 3800 50  0001 C CNN
+	1    6050 3800
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5950 3800 5200 3800
+$Comp
+L Device:R_Small R?
+U 1 1 605DA2A0
+P 6400 4300
+AR Path="/605C72FC/605DA2A0" Ref="R?"  Part="1" 
+AR Path="/605ED2C3/605DA2A0" Ref="R?"  Part="1" 
+AR Path="/606576F1/605DA2A0" Ref="R?"  Part="1" 
+F 0 "R?" H 6341 4346 50  0000 R CNN
+F 1 "10k" H 6341 4255 50  0000 R CNN
+F 2 "" H 6400 4300 50  0001 C CNN
+F 3 "~" H 6400 4300 50  0001 C CNN
+	1    6400 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6400 4200 6400 3800
+Wire Wire Line
+	6400 3800 6150 3800
+Wire Wire Line
+	6400 4400 6400 4700
+Wire Wire Line
+	6400 4700 5850 4700
+$Comp
+L Device:R_Small R?
+U 1 1 605DAF7B
+P 6400 5050
+AR Path="/605C72FC/605DAF7B" Ref="R?"  Part="1" 
+AR Path="/605ED2C3/605DAF7B" Ref="R?"  Part="1" 
+AR Path="/606576F1/605DAF7B" Ref="R?"  Part="1" 
+F 0 "R?" H 6459 5096 50  0000 L CNN
+F 1 "470k" H 6459 5005 50  0000 L CNN
+F 2 "" H 6400 5050 50  0001 C CNN
+F 3 "~" H 6400 5050 50  0001 C CNN
+	1    6400 5050
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6400 4950 6400 4700
+Connection ~ 6400 4700
+$Comp
+L Device:R_Small R?
+U 1 1 605DB9E1
+P 6850 4700
+AR Path="/605C72FC/605DB9E1" Ref="R?"  Part="1" 
+AR Path="/605ED2C3/605DB9E1" Ref="R?"  Part="1" 
+AR Path="/606576F1/605DB9E1" Ref="R?"  Part="1" 
+F 0 "R?" V 6654 4700 50  0000 C CNN
+F 1 "10k" V 6745 4700 50  0000 C CNN
+F 2 "" H 6850 4700 50  0001 C CNN
+F 3 "~" H 6850 4700 50  0001 C CNN
+	1    6850 4700
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6750 4700 6400 4700
+Wire Wire Line
+	7200 4700 6950 4700
+Wire Wire Line
+	7500 4900 7500 5400
+Wire Wire Line
+	7500 5400 6400 5400
+Wire Wire Line
+	4350 5400 4350 5150
+Wire Wire Line
+	6400 5150 6400 5400
+Connection ~ 6400 5400
+Wire Wire Line
+	6400 5400 4900 5400
+$Comp
+L Device:R_Small R?
+U 1 1 605DDA9F
+P 7500 4150
+AR Path="/605C72FC/605DDA9F" Ref="R?"  Part="1" 
+AR Path="/605ED2C3/605DDA9F" Ref="R?"  Part="1" 
+AR Path="/606576F1/605DDA9F" Ref="R?"  Part="1" 
+F 0 "R?" H 7441 4196 50  0000 R CNN
+F 1 "100k" H 7441 4105 50  0000 R CNN
+F 2 "" H 7500 4150 50  0001 C CNN
+F 3 "~" H 7500 4150 50  0001 C CNN
+	1    7500 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7500 4250 7500 4500
+Wire Wire Line
+	6400 3600 6400 3800
+Connection ~ 6400 3800
+Wire Wire Line
+	6700 3400 7500 3400
+Wire Wire Line
+	7500 3400 7500 3750
+Wire Wire Line
+	6400 2850 6400 3200
+Wire Wire Line
+	4350 2850 4350 2950
+$Comp
+L Device:R_Small R?
+U 1 1 605DF842
+P 7500 3100
+AR Path="/605C72FC/605DF842" Ref="R?"  Part="1" 
+AR Path="/605ED2C3/605DF842" Ref="R?"  Part="1" 
+AR Path="/606576F1/605DF842" Ref="R?"  Part="1" 
+F 0 "R?" H 7441 3146 50  0000 R CNN
+F 1 "1M" H 7441 3055 50  0000 R CNN
+F 2 "" H 7500 3100 50  0001 C CNN
+F 3 "~" H 7500 3100 50  0001 C CNN
+	1    7500 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7500 2850 7500 3000
+Wire Wire Line
+	7500 3200 7500 3400
+Connection ~ 7500 3400
+Wire Wire Line
+	6400 2850 7500 2850
+Connection ~ 6400 2850
+Wire Wire Line
+	4900 4000 4900 5400
+Connection ~ 4900 5400
+Wire Wire Line
+	4900 5400 4350 5400
+Wire Wire Line
+	7200 4600 7200 3750
+Wire Wire Line
+	7200 3750 7500 3750
+Connection ~ 7500 3750
+Wire Wire Line
+	7500 3750 7500 4050
+$Comp
+L Device:R_Small R?
+U 1 1 605E2C4C
+P 5250 4150
+AR Path="/605C72FC/605E2C4C" Ref="R?"  Part="1" 
+AR Path="/605ED2C3/605E2C4C" Ref="R?"  Part="1" 
+AR Path="/606576F1/605E2C4C" Ref="R?"  Part="1" 
+F 0 "R?" H 5309 4196 50  0000 L CNN
+F 1 "220" H 5309 4105 50  0000 L CNN
+F 2 "" H 5250 4150 50  0001 C CNN
+F 3 "~" H 5250 4150 50  0001 C CNN
+	1    5250 4150
+	1    0    0    1   
+$EndComp
+Text HLabel 7650 3750 2    50   Input ~ 0
+OUT
+Wire Wire Line
+	7650 3750 7500 3750
+Text GLabel 4100 2850 0    50   Input ~ 0
++5VDC
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 60669235
+P 5000 3800
+AR Path="/605C72FC/60669235" Ref="Q?"  Part="1" 
+AR Path="/605ED2C3/60669235" Ref="Q?"  Part="1" 
+AR Path="/606576F1/60669235" Ref="Q?"  Part="1" 
+F 0 "Q?" H 5191 3846 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 5191 3755 50  0000 L CNN
+F 2 "" H 5200 3900 50  0001 C CNN
+F 3 "~" H 5000 3800 50  0001 C CNN
+	1    5000 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2850 6400 2850
+$Comp
+L Device:Q_PNP_BCE Q?
+U 1 1 605DC332
+P 6900 2600
+AR Path="/605C72FC/605DC332" Ref="Q?"  Part="1" 
+AR Path="/605ED2C3/605DC332" Ref="Q?"  Part="1" 
+AR Path="/606576F1/605DC332" Ref="Q?"  Part="1" 
+F 0 "Q?" H 7090 2554 50  0000 L CNN
+F 1 "Q_PNP_BCE" H 7090 2645 50  0000 L CNN
+F 2 "" H 7100 2700 50  0001 C CNN
+F 3 "~" H 6900 2600 50  0001 C CNN
+	1    6900 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 6066A306
+P 7400 4700
+AR Path="/605C72FC/6066A306" Ref="Q?"  Part="1" 
+AR Path="/605ED2C3/6066A306" Ref="Q?"  Part="1" 
+AR Path="/606576F1/6066A306" Ref="Q?"  Part="1" 
+F 0 "Q?" H 7591 4746 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 7591 4655 50  0000 L CNN
+F 2 "" H 7600 4800 50  0001 C CNN
+F 3 "~" H 7400 4700 50  0001 C CNN
+	1    7400 4700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
