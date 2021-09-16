@@ -665,15 +665,15 @@ $EndComp
 $Comp
 L Amp-Module-rescue:LM393-Comparator-Amp-Module-rescue U?
 U 3 1 60A35849
-P 1300 6950
+P 800 7350
 AR Path="/604C8E92/60793AB8/60A35849" Ref="U?"  Part="3" 
 AR Path="/604C8E92/60A35849" Ref="U?"  Part="3" 
 AR Path="/60A35849" Ref="U?"  Part="3" 
-F 0 "U?" H 1258 6996 50  0000 L CNN
-F 1 "LM393" H 1258 6905 50  0000 L CNN
-F 2 "" H 1300 6950 50  0001 C CNN
-F 3 "" H 1300 6950 50  0001 C CNN
-	3    1300 6950
+F 0 "U?" H 758 7396 50  0000 L CNN
+F 1 "LM393" H 758 7305 50  0000 L CNN
+F 2 "" H 800 7350 50  0001 C CNN
+F 3 "" H 800 7350 50  0001 C CNN
+	3    800  7350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -709,15 +709,15 @@ $EndComp
 $Comp
 L Amp-Module-rescue:LM393-Comparator-Amp-Module-rescue U?
 U 3 1 60A3585D
-P 1800 6950
+P 1300 7350
 AR Path="/604C8E92/60793AB8/60A3585D" Ref="U?"  Part="3" 
 AR Path="/604C8E92/60A3585D" Ref="U?"  Part="3" 
 AR Path="/60A3585D" Ref="U?"  Part="3" 
-F 0 "U?" H 1758 6996 50  0000 L CNN
-F 1 "LM393" H 1758 6905 50  0000 L CNN
-F 2 "" H 1800 6950 50  0001 C CNN
-F 3 "" H 1800 6950 50  0001 C CNN
-	3    1800 6950
+F 0 "U?" H 1258 7396 50  0000 L CNN
+F 1 "LM393" H 1258 7305 50  0000 L CNN
+F 2 "" H 1300 7350 50  0001 C CNN
+F 3 "" H 1300 7350 50  0001 C CNN
+	3    1300 7350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1362,29 +1362,29 @@ Wire Wire Line
 $Comp
 L Amp-Module-rescue:LM393-Comparator-Amp-Module-rescue U?
 U 3 1 60A35997
-P 2300 6950
+P 1800 7350
 AR Path="/604C8E92/60793AB8/60A35997" Ref="U?"  Part="3" 
 AR Path="/604C8E92/60A35997" Ref="U?"  Part="3" 
 AR Path="/60A35997" Ref="U?"  Part="3" 
-F 0 "U?" H 2258 6996 50  0000 L CNN
-F 1 "LM393" H 2258 6905 50  0000 L CNN
-F 2 "" H 2300 6950 50  0001 C CNN
-F 3 "" H 2300 6950 50  0001 C CNN
-	3    2300 6950
+F 0 "U?" H 1758 7396 50  0000 L CNN
+F 1 "LM393" H 1758 7305 50  0000 L CNN
+F 2 "" H 1800 7350 50  0001 C CNN
+F 3 "" H 1800 7350 50  0001 C CNN
+	3    1800 7350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Amp-Module-rescue:LM393-Comparator-Amp-Module-rescue U?
 U 3 1 60A3599D
-P 2800 6950
+P 2300 7350
 AR Path="/604C8E92/60793AB8/60A3599D" Ref="U?"  Part="3" 
 AR Path="/604C8E92/60A3599D" Ref="U?"  Part="3" 
 AR Path="/60A3599D" Ref="U?"  Part="3" 
-F 0 "U?" H 2758 6996 50  0000 L CNN
-F 1 "LM393" H 2758 6905 50  0000 L CNN
-F 2 "" H 2800 6950 50  0001 C CNN
-F 3 "" H 2800 6950 50  0001 C CNN
-	3    2800 6950
+F 0 "U?" H 2258 7396 50  0000 L CNN
+F 1 "LM393" H 2258 7305 50  0000 L CNN
+F 2 "" H 2300 7350 50  0001 C CNN
+F 3 "" H 2300 7350 50  0001 C CNN
+	3    2300 7350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
