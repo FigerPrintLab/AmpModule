@@ -398,4 +398,6 @@ Wire Wire Line
 	6150 4450 6200 4450
 Text GLabel 4250 2700 0    50   Input ~ 0
 +5V_REG
+Text Notes 2900 4450 0    50   ~ 0
+BOM:\nResistors:\n  - 1x1M\n  - 1x470k\n  - 1x100k\n  - 5x10k\n  - 1x180\nCaps:\n  - 1x470n\nTransistors:\n  - 2xgeneral purpose NPN\n  - 1xgeneral purpose PNP\nOthers:\n  - 1xpush button
 $EndSCHEMATC
