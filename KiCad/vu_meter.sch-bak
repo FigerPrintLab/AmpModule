@@ -105,8 +105,6 @@ Wire Wire Line
 	2500 3550 2650 3550
 Wire Wire Line
 	2500 3200 2500 2850
-Wire Wire Line
-	2500 2050 2500 2150
 $Comp
 L Device:LED_Small D?
 U 1 1 60A357C1
@@ -242,19 +240,8 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 2950 3650 50  0001 C CNN
 	2    2950 3650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:RTRIM R32
-U 1 1 615E6B71
-P 2500 2300
-F 0 "R32" H 2628 2346 50  0000 L CNN
-F 1 "500k" H 2628 2255 50  0000 L CNN
-F 2 "AmpModule:Trim_audio" V 2430 2300 50  0001 C CNN
-F 3 "~" H 2500 2300 50  0001 C CNN
-	1    2500 2300
-	1    0    0    -1  
-$EndComp
 Connection ~ 2500 2850
-Text Notes 2200 2350 0    50   ~ 0
+Text Notes 2600 2250 0    50   ~ 0
 log(A)
 Text GLabel 7950 1700 0    50   Input ~ 0
 PROTECT2
@@ -692,8 +679,6 @@ Wire Wire Line
 	7750 3600 7900 3600
 Wire Wire Line
 	7750 3250 7750 2900
-Wire Wire Line
-	7750 2100 7750 2200
 $Comp
 L Device:LED_Small D?
 U 1 1 617991E7
@@ -829,28 +814,13 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 8200 3700 50  0001 C CNN
 	2    8200 3700
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:RTRIM R42
-U 1 1 61799225
-P 7750 2350
-F 0 "R42" H 7878 2396 50  0000 L CNN
-F 1 "500k" H 7878 2305 50  0000 L CNN
-F 2 "AmpModule:Trim_audio" V 7680 2350 50  0001 C CNN
-F 3 "~" H 7750 2350 50  0001 C CNN
-	1    7750 2350
-	1    0    0    -1  
-$EndComp
 Connection ~ 7750 2900
-Text Notes 7450 2400 0    50   ~ 0
-log(A)
 Wire Wire Line
 	6600 3400 6600 3200
 Text GLabel 6550 3000 0    50   Input ~ 0
 VOUT2MON
 Wire Wire Line
 	6600 3200 6700 3200
-Wire Wire Line
-	7750 2600 7750 2500
 Wire Wire Line
 	7750 2800 7750 2900
 Wire Wire Line
@@ -1263,4 +1233,48 @@ Wire Wire Line
 	4050 6200 4450 6200
 Connection ~ 3650 6200
 Connection ~ 3650 7400
+Wire Wire Line
+	2500 2050 2500 2200
+Wire Wire Line
+	2600 2300 2650 2300
+Wire Wire Line
+	2650 2300 2650 2450
+Wire Wire Line
+	2650 2450 2500 2450
+$Comp
+L Device:R_POT_Small RV1
+U 1 1 619D98A4
+P 2500 2300
+F 0 "RV1" H 2441 2346 50  0000 R CNN
+F 1 "500k" H 2441 2255 50  0000 R CNN
+F 2 "AmpModule:Trim_audio" H 2500 2300 50  0001 C CNN
+F 3 "~" H 2500 2300 50  0001 C CNN
+	1    2500 2300
+	1    0    0    -1  
+$EndComp
+Text Notes 7850 2300 0    50   ~ 0
+log(A)
+Wire Wire Line
+	7750 2600 7750 2500
+Wire Wire Line
+	7850 2350 7900 2350
+Wire Wire Line
+	7900 2350 7900 2500
+Wire Wire Line
+	7900 2500 7750 2500
+$Comp
+L Device:R_POT_Small RV2
+U 1 1 619F6FC0
+P 7750 2350
+F 0 "RV2" H 7691 2396 50  0000 R CNN
+F 1 "500k" H 7691 2305 50  0000 R CNN
+F 2 "AmpModule:Trim_audio" H 7750 2350 50  0001 C CNN
+F 3 "~" H 7750 2350 50  0001 C CNN
+	1    7750 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2100 7750 2250
+NoConn ~ 2500 2400
+NoConn ~ 7750 2450
 $EndSCHEMATC
