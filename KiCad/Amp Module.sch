@@ -522,22 +522,6 @@ Wire Notes Line
 	550  3100 800  3100
 Wire Notes Line
 	800  3100 800  3000
-$Comp
-L Amp-Module-rescue:Rotary_SW07 RS1
-U 1 1 612EA28D
-P 2600 4350
-F 0 "RS1" H 2500 3850 50  0000 C CNN
-F 1 "Alps SRBV170701" H 2500 3950 50  0000 C CNN
-F 2 "AmpModule:Alps_SRBV170701" H 2600 4350 50  0001 C CNN
-F 3 "" H 2600 4350 50  0001 C CNN
-	1    2600 4350
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 4350 3100 3850
-Wire Wire Line
-	3000 4350 3100 4350
-Connection ~ 3100 3850
 Wire Wire Line
 	2400 4150 2500 4150
 Wire Wire Line
@@ -664,19 +648,6 @@ Wire Wire Line
 	2150 4050 2150 4150
 Wire Wire Line
 	2400 4050 2650 4050
-$Comp
-L Amp-Module-rescue:Rotary_SW07 RS2
-U 1 1 612CEE72
-P 2600 6750
-F 0 "RS2" H 2500 6250 50  0000 C CNN
-F 1 "Alps SRBV170701" H 2500 6350 50  0000 C CNN
-F 2 "AmpModule:Alps_SRBV170701" H 2600 6750 50  0001 C CNN
-F 3 "" H 2600 6750 50  0001 C CNN
-	1    2600 6750
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 6750 3100 6750
 Wire Wire Line
 	2400 6550 2500 6550
 Wire Wire Line
@@ -687,8 +658,6 @@ Wire Wire Line
 	2400 6950 2500 6950
 Wire Wire Line
 	2400 6450 2650 6450
-Wire Wire Line
-	3100 6750 3100 6250
 Connection ~ 3100 6250
 Wire Wire Line
 	3700 6300 3700 6100
@@ -2017,4 +1986,45 @@ Wire Wire Line
 Connection ~ 10900 3150
 Wire Wire Line
 	10900 3150 10900 3500
+$Comp
+L Amp~Module:Alps_SRBV170701 U10
+U 1 1 617627AC
+P 2600 4350
+F 0 "U10" H 2475 3947 50  0000 C CNN
+F 1 "Alps_SRBV170701" H 2475 3856 50  0000 C CNN
+F 2 "AmpModule:Alps_SRBV170701" H 2600 4350 50  0001 C CNN
+F 3 "" H 2600 4350 50  0001 C CNN
+	1    2600 4350
+	-1   0    0    -1  
+$EndComp
+Connection ~ 3100 3850
+Wire Wire Line
+	3100 4400 3050 4400
+Wire Wire Line
+	3100 3850 3100 4300
+Wire Wire Line
+	3050 4300 3100 4300
+Connection ~ 3100 4300
+Wire Wire Line
+	3100 4300 3100 4400
+$Comp
+L Amp~Module:Alps_SRBV170701 U16
+U 1 1 6179A441
+P 2600 6750
+F 0 "U16" H 2475 6347 50  0000 C CNN
+F 1 "Alps_SRBV170701" H 2475 6256 50  0000 C CNN
+F 2 "AmpModule:Alps_SRBV170701" H 2600 6750 50  0001 C CNN
+F 3 "" H 2600 6750 50  0001 C CNN
+	1    2600 6750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 6800 3050 6800
+Wire Wire Line
+	3100 6250 3100 6700
+Wire Wire Line
+	3050 6700 3100 6700
+Connection ~ 3100 6700
+Wire Wire Line
+	3100 6700 3100 6800
 $EndSCHEMATC
