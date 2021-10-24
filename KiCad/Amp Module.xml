@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>C:\Users\Ralf\OneDrive\Documenti\Electronics\AmpModule\KiCad\Amp Module.sch</source>
-    <date>23/10/2021 17:55:27</date>
-    <tool>Eeschema (5.1.10)-1</tool>
+    <source>/home/ralf/dev/electronics/AmpModule/KiCad/Amp Module.sch</source>
+    <date>sab 23 ott 2021, 18:09:38</date>
+    <tool>Eeschema 5.1.10-6.fc34</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>AmpModule front panel (2way)</title>
@@ -1318,31 +1318,31 @@
   </libparts>
   <libraries>
     <library logical="74xGxx">
-      <uri>C:\Program Files\KiCad\share\kicad\library/74xGxx.lib</uri>
+      <uri>/usr/share/kicad/library/74xGxx.lib</uri>
     </library>
     <library logical="74xx">
-      <uri>C:\Program Files\KiCad\share\kicad\library/74xx.lib</uri>
+      <uri>/usr/share/kicad/library/74xx.lib</uri>
     </library>
     <library logical="Amp Module">
-      <uri>C:\Users\Ralf\OneDrive\Documenti\Electronics\AmpModule\KiCad/Amp Module.lib</uri>
+      <uri>/home/ralf/dev/electronics/AmpModule/KiCad/Amp Module.lib</uri>
     </library>
     <library logical="Amplifier_Operational">
-      <uri>C:\Program Files\KiCad\share\kicad\library/Amplifier_Operational.lib</uri>
+      <uri>/usr/share/kicad/library/Amplifier_Operational.lib</uri>
     </library>
     <library logical="Comparator">
-      <uri>C:\Program Files\KiCad\share\kicad\library/Comparator.lib</uri>
+      <uri>/usr/share/kicad/library/Comparator.lib</uri>
     </library>
     <library logical="Connector_Generic">
-      <uri>C:\Program Files\KiCad\share\kicad\library/Connector_Generic.lib</uri>
+      <uri>/usr/share/kicad/library/Connector_Generic.lib</uri>
     </library>
     <library logical="Device">
-      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+      <uri>/usr/share/kicad/library/Device.lib</uri>
     </library>
     <library logical="Regulator_Linear">
-      <uri>C:\Program Files\KiCad\share\kicad\library/Regulator_Linear.lib</uri>
+      <uri>/usr/share/kicad/library/Regulator_Linear.lib</uri>
     </library>
     <library logical="Switch">
-      <uri>C:\Program Files\KiCad\share\kicad\library/Switch.lib</uri>
+      <uri>/usr/share/kicad/library/Switch.lib</uri>
     </library>
   </libraries>
   <nets>
